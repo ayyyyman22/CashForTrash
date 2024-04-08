@@ -1,11 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'recycle_and_point_usage_historypage_model.dart';
 export 'recycle_and_point_usage_historypage_model.dart';
 
@@ -65,7 +60,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                   letterSpacing: 0.0,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 2.0,
         ),
@@ -74,7 +69,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
           child: Column(
             children: [
               Align(
-                alignment: Alignment(0.0, 0),
+                alignment: const Alignment(0.0, 0),
                 child: TabBar(
                   labelColor: FlutterFlowTheme.of(context).primaryText,
                   unselectedLabelColor:
@@ -83,10 +78,10 @@ class _RecycleAndPointUsageHistorypageWidgetState
                         fontFamily: 'Readex Pro',
                         letterSpacing: 0.0,
                       ),
-                  unselectedLabelStyle: TextStyle(),
+                  unselectedLabelStyle: const TextStyle(),
                   indicatorColor: FlutterFlowTheme.of(context).success,
-                  padding: EdgeInsets.all(4.0),
-                  tabs: [
+                  padding: const EdgeInsets.all(4.0),
+                  tabs: const [
                     Tab(
                       text: 'Recent Recycles',
                     ),
@@ -106,18 +101,18 @@ class _RecycleAndPointUsageHistorypageWidgetState
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 24.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 24.0),
                       child: SingleChildScrollView(
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: Container(
                                 width: double.infinity,
-                                constraints: BoxConstraints(
+                                constraints: const BoxConstraints(
                                   maxWidth: 570.0,
                                 ),
                                 decoration: BoxDecoration(
@@ -131,7 +126,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                   ),
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 12.0, 16.0, 12.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -139,7 +134,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                         MainAxisAlignment.spaceBetween,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 12.0, 0.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -153,7 +148,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                                   .textScaler,
                                               text: TextSpan(
                                                 children: [
-                                                  TextSpan(
+                                                  const TextSpan(
                                                     text: 'Trash Recycle #: ',
                                                     style: TextStyle(),
                                                   ),
@@ -179,7 +174,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 4.0, 0.0, 0.0),
                                               child: Text(
                                                 'Mon. July 3rd',
@@ -203,7 +198,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 12.0, 0.0, 0.0),
                                               child: Container(
@@ -224,11 +219,11 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(7.0, 0.0,
                                                                 7.0, 0.0),
                                                     child: Text(
@@ -255,7 +250,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 12.0),
                                             child: Text(
                                               '\$1.50',
@@ -272,7 +267,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 12.0, 0.0, 0.0),
                                             child: Container(
                                               height: 32.0,
@@ -290,10 +285,10 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                                 ),
                                               ),
                                               child: Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           12.0, 0.0, 12.0, 0.0),
                                                   child: Text(
@@ -321,11 +316,11 @@ class _RecycleAndPointUsageHistorypageWidgetState
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: Container(
                                 width: double.infinity,
-                                constraints: BoxConstraints(
+                                constraints: const BoxConstraints(
                                   maxWidth: 570.0,
                                 ),
                                 decoration: BoxDecoration(
@@ -339,7 +334,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                   ),
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 12.0, 16.0, 12.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -347,7 +342,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                         MainAxisAlignment.spaceBetween,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 12.0, 0.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -361,7 +356,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                                   .textScaler,
                                               text: TextSpan(
                                                 children: [
-                                                  TextSpan(
+                                                  const TextSpan(
                                                     text: 'Trash Recycle #: ',
                                                     style: TextStyle(),
                                                   ),
@@ -387,7 +382,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 4.0, 0.0, 0.0),
                                               child: Text(
                                                 'Mon. July 3rd',
@@ -411,7 +406,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 12.0, 0.0, 0.0),
                                               child: Container(
@@ -432,11 +427,11 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(7.0, 0.0,
                                                                 7.0, 0.0),
                                                     child: Text(
@@ -463,7 +458,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 12.0),
                                             child: Text(
                                               '\$1.50',
@@ -480,7 +475,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 12.0, 0.0, 0.0),
                                             child: Container(
                                               height: 32.0,
@@ -498,10 +493,10 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                                 ),
                                               ),
                                               child: Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           12.0, 0.0, 12.0, 0.0),
                                                   child: Text(
@@ -529,11 +524,11 @@ class _RecycleAndPointUsageHistorypageWidgetState
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: Container(
                                 width: double.infinity,
-                                constraints: BoxConstraints(
+                                constraints: const BoxConstraints(
                                   maxWidth: 570.0,
                                 ),
                                 decoration: BoxDecoration(
@@ -547,7 +542,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                   ),
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 12.0, 16.0, 12.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -555,7 +550,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                         MainAxisAlignment.spaceBetween,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 12.0, 0.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -569,7 +564,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                                   .textScaler,
                                               text: TextSpan(
                                                 children: [
-                                                  TextSpan(
+                                                  const TextSpan(
                                                     text: 'Trash Recycle #: ',
                                                     style: TextStyle(),
                                                   ),
@@ -595,7 +590,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 4.0, 0.0, 0.0),
                                               child: Text(
                                                 'Mon. July 3rd',
@@ -619,7 +614,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 12.0, 0.0, 0.0),
                                               child: Container(
@@ -640,11 +635,11 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                                 ),
                                                 child: Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, 0.0),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(7.0, 0.0,
                                                                 7.0, 0.0),
                                                     child: Text(
@@ -671,7 +666,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 12.0),
                                             child: Text(
                                               '\$1.50',
@@ -688,7 +683,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 12.0, 0.0, 0.0),
                                             child: Container(
                                               height: 32.0,
@@ -706,10 +701,10 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                                 ),
                                               ),
                                               child: Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           12.0, 0.0, 12.0, 0.0),
                                                   child: Text(
@@ -736,7 +731,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                 ),
                               ),
                             ),
-                          ].divide(SizedBox(height: 12.0)),
+                          ].divide(const SizedBox(height: 12.0)),
                         ),
                       ),
                     ),
@@ -746,7 +741,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 12.0, 0.0, 0.0),
                             child: Text(
                               'This Month',
@@ -765,7 +760,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                             scrollDirection: Axis.vertical,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 12.0, 0.0, 1.0),
                                 child: Container(
                                   width: double.infinity,
@@ -777,7 +772,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                       BoxShadow(
                                         color: FlutterFlowTheme.of(context)
                                             .lineColor,
-                                        offset: Offset(
+                                        offset: const Offset(
                                           0.0,
                                           1.0,
                                         ),
@@ -785,7 +780,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                     ],
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 5.0, 16.0, 5.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -810,7 +805,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                                       ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 5.0, 0.0, 0.0),
                                               child: Text(
                                                 'Feb 15, 2022',
@@ -840,7 +835,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 1.0),
                                 child: Container(
                                   width: double.infinity,
@@ -852,7 +847,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                       BoxShadow(
                                         color: FlutterFlowTheme.of(context)
                                             .lineColor,
-                                        offset: Offset(
+                                        offset: const Offset(
                                           0.0,
                                           1.0,
                                         ),
@@ -860,7 +855,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                     ],
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 5.0, 16.0, 5.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -885,7 +880,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                                       ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 5.0, 0.0, 0.0),
                                               child: Text(
                                                 'Feb 15, 2022',
@@ -915,7 +910,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 1.0),
                                 child: Container(
                                   width: double.infinity,
@@ -927,7 +922,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                       BoxShadow(
                                         color: FlutterFlowTheme.of(context)
                                             .lineColor,
-                                        offset: Offset(
+                                        offset: const Offset(
                                           0.0,
                                           1.0,
                                         ),
@@ -935,7 +930,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                     ],
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 5.0, 16.0, 5.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -960,7 +955,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                                       ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 5.0, 0.0, 0.0),
                                               child: Text(
                                                 'Feb 15, 2022',
@@ -990,7 +985,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 1.0),
                                 child: Container(
                                   width: double.infinity,
@@ -1002,7 +997,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                       BoxShadow(
                                         color: FlutterFlowTheme.of(context)
                                             .lineColor,
-                                        offset: Offset(
+                                        offset: const Offset(
                                           0.0,
                                           1.0,
                                         ),
@@ -1010,7 +1005,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                     ],
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 5.0, 16.0, 5.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -1035,7 +1030,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                                       ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 5.0, 0.0, 0.0),
                                               child: Text(
                                                 'Feb 15, 2022',
@@ -1067,7 +1062,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                             ],
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 12.0, 0.0, 0.0),
                             child: Text(
                               'Last Month',
@@ -1086,7 +1081,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                             scrollDirection: Axis.vertical,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 12.0, 0.0, 1.0),
                                 child: Container(
                                   width: double.infinity,
@@ -1098,7 +1093,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                       BoxShadow(
                                         color: FlutterFlowTheme.of(context)
                                             .lineColor,
-                                        offset: Offset(
+                                        offset: const Offset(
                                           0.0,
                                           1.0,
                                         ),
@@ -1106,7 +1101,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                     ],
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 5.0, 16.0, 5.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -1131,7 +1126,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                                       ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 5.0, 0.0, 0.0),
                                               child: Text(
                                                 'Feb 15, 2022',
@@ -1161,7 +1156,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 1.0),
                                 child: Container(
                                   width: double.infinity,
@@ -1173,7 +1168,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                       BoxShadow(
                                         color: FlutterFlowTheme.of(context)
                                             .lineColor,
-                                        offset: Offset(
+                                        offset: const Offset(
                                           0.0,
                                           1.0,
                                         ),
@@ -1181,7 +1176,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                     ],
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 5.0, 16.0, 5.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.max,
@@ -1206,7 +1201,7 @@ class _RecycleAndPointUsageHistorypageWidgetState
                                                       ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 5.0, 0.0, 0.0),
                                               child: Text(
                                                 'Feb 15, 2022',

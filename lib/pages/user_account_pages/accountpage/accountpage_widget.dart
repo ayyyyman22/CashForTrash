@@ -5,10 +5,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'accountpage_model.dart';
 export 'accountpage_model.dart';
 
@@ -40,8 +37,8 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 600.ms,
-          begin: Offset(0.0, 90.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 90.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -59,8 +56,8 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 600.ms,
-          begin: Offset(0.0, 90.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 90.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -104,7 +101,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                       letterSpacing: 0.0,
                     ),
               ),
-              actions: [],
+              actions: const [],
               centerTitle: false,
               elevation: 0.0,
             )
@@ -131,13 +128,13 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                   ),
                 ),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 16.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 16.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 12.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -148,7 +145,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                               size: 32.0,
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 'check.io',
@@ -174,7 +171,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 12.0, 0.0, 0.0),
                               child: Text(
                                 'Platform Navigation',
@@ -187,10 +184,10 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: AnimatedContainer(
-                                duration: Duration(milliseconds: 200),
+                                duration: const Duration(milliseconds: 200),
                                 curve: Curves.easeInOut,
                                 width: double.infinity,
                                 height: 44.0,
@@ -201,7 +198,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                   shape: BoxShape.rectangle,
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       8.0, 0.0, 6.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -213,7 +210,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                         size: 24.0,
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             12.0, 0.0, 0.0, 0.0),
                                         child: Text(
                                           'Dashboard',
@@ -231,10 +228,10 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: AnimatedContainer(
-                                duration: Duration(milliseconds: 200),
+                                duration: const Duration(milliseconds: 200),
                                 curve: Curves.easeInOut,
                                 width: double.infinity,
                                 height: 44.0,
@@ -245,7 +242,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                   shape: BoxShape.rectangle,
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       8.0, 0.0, 6.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -257,7 +254,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                         size: 24.0,
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             12.0, 0.0, 0.0, 0.0),
                                         child: Text(
                                           'Chats',
@@ -275,10 +272,10 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: AnimatedContainer(
-                                duration: Duration(milliseconds: 200),
+                                duration: const Duration(milliseconds: 200),
                                 curve: Curves.easeInOut,
                                 width: double.infinity,
                                 height: 44.0,
@@ -289,7 +286,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                   shape: BoxShape.rectangle,
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       8.0, 0.0, 6.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -301,7 +298,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                         size: 24.0,
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             12.0, 0.0, 0.0, 0.0),
                                         child: Text(
                                           'Projects',
@@ -319,10 +316,10 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: AnimatedContainer(
-                                duration: Duration(milliseconds: 200),
+                                duration: const Duration(milliseconds: 200),
                                 curve: Curves.easeInOut,
                                 width: double.infinity,
                                 height: 44.0,
@@ -332,7 +329,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                   shape: BoxShape.rectangle,
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       8.0, 0.0, 6.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -346,7 +343,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                       Expanded(
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   12.0, 0.0, 0.0, 0.0),
                                           child: Text(
                                             'Recent Orders',
@@ -369,10 +366,10 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                         ),
                                         child: Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, 0.0),
+                                              const AlignmentDirectional(0.0, 0.0),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     8.0, 4.0, 8.0, 4.0),
                                             child: Text(
                                               '12',
@@ -397,7 +394,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 'Settings',
@@ -410,10 +407,10 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: AnimatedContainer(
-                                duration: Duration(milliseconds: 200),
+                                duration: const Duration(milliseconds: 200),
                                 curve: Curves.easeInOut,
                                 width: double.infinity,
                                 height: 44.0,
@@ -424,7 +421,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                   shape: BoxShape.rectangle,
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       8.0, 0.0, 6.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -436,7 +433,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                         size: 24.0,
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             12.0, 0.0, 0.0, 0.0),
                                         child: Text(
                                           'Billing',
@@ -454,10 +451,10 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 0.0, 16.0, 0.0),
                               child: AnimatedContainer(
-                                duration: Duration(milliseconds: 200),
+                                duration: const Duration(milliseconds: 200),
                                 curve: Curves.easeInOut,
                                 width: double.infinity,
                                 height: 44.0,
@@ -468,7 +465,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                   shape: BoxShape.rectangle,
                                 ),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       8.0, 0.0, 6.0, 0.0),
                                   child: Row(
                                     mainAxisSize: MainAxisSize.max,
@@ -480,7 +477,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                         size: 24.0,
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             12.0, 0.0, 0.0, 0.0),
                                         child: Text(
                                           'Explore',
@@ -497,13 +494,13 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                 ),
                               ),
                             ),
-                          ].divide(SizedBox(height: 12.0)),
+                          ].divide(const SizedBox(height: 12.0)),
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, -1.0),
+                        alignment: const AlignmentDirectional(0.0, -1.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 100.0, 0.0, 16.0),
                           child: Container(
                             width: 250.0,
@@ -518,7 +515,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsets.all(4.0),
+                              padding: const EdgeInsets.all(4.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -576,7 +573,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                               size: 16.0,
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(4.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 'Light Mode',
@@ -656,7 +653,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                               size: 16.0,
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(4.0, 0.0, 0.0, 0.0),
                                               child: Text(
                                                 'Dark Mode',
@@ -695,7 +692,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                         color: FlutterFlowTheme.of(context).alternate,
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 12.0, 16.0, 12.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -705,7 +702,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                               height: 50.0,
                               decoration: BoxDecoration(
                                 color: FlutterFlowTheme.of(context).accent1,
-                                borderRadius: BorderRadius.only(
+                                borderRadius: const BorderRadius.only(
                                   bottomLeft: Radius.circular(10.0),
                                   bottomRight: Radius.circular(10.0),
                                   topLeft: Radius.circular(10.0),
@@ -717,13 +714,13 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                 ),
                               ),
                               child: Padding(
-                                padding: EdgeInsets.all(2.0),
+                                padding: const EdgeInsets.all(2.0),
                                 child: ClipRRect(
                                   borderRadius: BorderRadius.circular(8.0),
                                   child: CachedNetworkImage(
-                                    fadeInDuration: Duration(milliseconds: 500),
+                                    fadeInDuration: const Duration(milliseconds: 500),
                                     fadeOutDuration:
-                                        Duration(milliseconds: 500),
+                                        const Duration(milliseconds: 500),
                                     imageUrl:
                                         'https://images.unsplash.com/photo-1624561172888-ac93c696e10c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjJ8fHVzZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
                                     width: 44.0,
@@ -735,7 +732,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                             ),
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     12.0, 0.0, 0.0, 0.0),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -767,7 +764,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -787,7 +784,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
               ),
             Expanded(
               child: Align(
-                alignment: AlignmentDirectional(0.0, -1.0),
+                alignment: const AlignmentDirectional(0.0, -1.0),
                 child: SingleChildScrollView(
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
@@ -800,12 +797,12 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                         Container(
                           width: double.infinity,
                           height: 24.0,
-                          decoration: BoxDecoration(),
+                          decoration: const BoxDecoration(),
                         ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, -1.0),
+                        alignment: const AlignmentDirectional(0.0, -1.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 16.0, 16.0, 0.0),
                           child: Wrap(
                             spacing: 16.0,
@@ -819,7 +816,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                             children: [
                               Container(
                                 width: double.infinity,
-                                constraints: BoxConstraints(
+                                constraints: const BoxConstraints(
                                   maxWidth: 390.0,
                                 ),
                                 decoration: BoxDecoration(
@@ -836,7 +833,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                   mainAxisSize: MainAxisSize.max,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsets.all(16.0),
+                                      padding: const EdgeInsets.all(16.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
@@ -847,7 +844,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .accent1,
-                                              borderRadius: BorderRadius.only(
+                                              borderRadius: const BorderRadius.only(
                                                 bottomLeft:
                                                     Radius.circular(10.0),
                                                 bottomRight:
@@ -863,14 +860,14 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                               ),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsets.all(2.0),
+                                              padding: const EdgeInsets.all(2.0),
                                               child: ClipRRect(
                                                 borderRadius:
                                                     BorderRadius.circular(8.0),
                                                 child: CachedNetworkImage(
-                                                  fadeInDuration: Duration(
+                                                  fadeInDuration: const Duration(
                                                       milliseconds: 500),
-                                                  fadeOutDuration: Duration(
+                                                  fadeOutDuration: const Duration(
                                                       milliseconds: 500),
                                                   imageUrl:
                                                       'https://images.unsplash.com/photo-1624561172888-ac93c696e10c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjJ8fHVzZXJzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
@@ -883,7 +880,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                           ),
                                           Expanded(
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 4.0, 0.0, 4.0),
                                               child: Column(
@@ -906,7 +903,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 4.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -939,7 +936,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                         Expanded(
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 12.0),
                                             child: Container(
                                               width: 200.0,
@@ -951,7 +948,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                                     BorderRadius.circular(8.0),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         12.0, 12.0, 12.0, 0.0),
                                                 child: Column(
@@ -970,7 +967,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   8.0,
@@ -1014,7 +1011,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                         Expanded(
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 12.0),
                                             child: Container(
                                               width: 200.0,
@@ -1026,7 +1023,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                                     BorderRadius.circular(8.0),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         12.0, 12.0, 12.0, 0.0),
                                                 child: Column(
@@ -1045,7 +1042,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   8.0,
@@ -1093,10 +1090,10 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                               ),
                               Container(
                                 width: double.infinity,
-                                constraints: BoxConstraints(
+                                constraints: const BoxConstraints(
                                   maxWidth: 470.0,
                                 ),
-                                decoration: BoxDecoration(),
+                                decoration: const BoxDecoration(),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -1114,7 +1111,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 12.0, 0.0, 12.0),
                                         child: Text(
                                           'My Account Information',
@@ -1128,7 +1125,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 1.0),
                                       child: Container(
                                         width: double.infinity,
@@ -1142,7 +1139,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .alternate,
-                                              offset: Offset(
+                                              offset: const Offset(
                                                 0.0,
                                                 1.0,
                                               ),
@@ -1152,7 +1149,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                         ),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
@@ -1185,7 +1182,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                                     Expanded(
                                                       child: Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 1.0, 0.0),
                                                         child: Icon(
                                                           Icons
@@ -1206,7 +1203,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 1.0),
                                       child: Container(
                                         width: double.infinity,
@@ -1220,7 +1217,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .alternate,
-                                              offset: Offset(
+                                              offset: const Offset(
                                                 0.0,
                                                 1.0,
                                               ),
@@ -1230,7 +1227,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                         ),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
@@ -1266,7 +1263,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                                     Expanded(
                                                       child: Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 1.0, 0.0),
                                                         child: Icon(
                                                           Icons
@@ -1287,7 +1284,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 12.0, 0.0, 0.0),
                                       child: Container(
                                         width: double.infinity,
@@ -1303,7 +1300,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                         ),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 12.0, 0.0, 12.0),
                                           child: Text(
                                             'Support',
@@ -1318,7 +1315,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 1.0),
                                       child: Container(
                                         width: double.infinity,
@@ -1332,7 +1329,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .alternate,
-                                              offset: Offset(
+                                              offset: const Offset(
                                                 0.0,
                                                 1.0,
                                               ),
@@ -1342,7 +1339,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                         ),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -1368,7 +1365,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                                   Expanded(
                                                     child: Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               1.0, 0.0),
                                                       child: Icon(
                                                         Icons
@@ -1389,7 +1386,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 1.0),
                                       child: Container(
                                         width: double.infinity,
@@ -1403,7 +1400,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .alternate,
-                                              offset: Offset(
+                                              offset: const Offset(
                                                 0.0,
                                                 1.0,
                                               ),
@@ -1413,7 +1410,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                         ),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -1439,7 +1436,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                                   Expanded(
                                                     child: Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               1.0, 0.0),
                                                       child: Icon(
                                                         Icons
@@ -1460,7 +1457,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 0.0, 1.0),
                                       child: Container(
                                         width: double.infinity,
@@ -1474,7 +1471,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .alternate,
-                                              offset: Offset(
+                                              offset: const Offset(
                                                 0.0,
                                                 1.0,
                                               ),
@@ -1484,7 +1481,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                         ),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 0.0, 16.0, 0.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
@@ -1507,7 +1504,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                                   Expanded(
                                                     child: Align(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               1.0, 0.0),
                                                       child: Icon(
                                                         Icons
@@ -1529,9 +1526,9 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                     ),
                                     Align(
                                       alignment:
-                                          AlignmentDirectional(0.0, -1.0),
+                                          const AlignmentDirectional(0.0, -1.0),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 24.0, 0.0, 0.0),
                                         child: FFButtonWidget(
                                           onPressed: () async {
@@ -1549,10 +1546,10 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                                             width: 130.0,
                                             height: 50.0,
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 0.0),
                                             iconPadding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 0.0),
                                             color: FlutterFlowTheme.of(context)
                                                 .secondaryBackground,
@@ -1587,7 +1584,7 @@ class _AccountpageWidgetState extends State<AccountpageWidget>
                           ),
                         ),
                       ),
-                    ].addToEnd(SizedBox(height: 72.0)),
+                    ].addToEnd(const SizedBox(height: 72.0)),
                   ),
                 ),
               ),

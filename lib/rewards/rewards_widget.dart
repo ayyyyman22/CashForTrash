@@ -2,13 +2,8 @@ import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'rewards_model.dart';
 export 'rewards_model.dart';
 
@@ -40,8 +35,8 @@ class _RewardsWidgetState extends State<RewardsWidget>
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 600.ms,
-          begin: Offset(-60.0, 0.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(-60.0, 0.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -59,8 +54,8 @@ class _RewardsWidgetState extends State<RewardsWidget>
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 600.ms,
-          begin: Offset(0.0, 80.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 80.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -78,8 +73,8 @@ class _RewardsWidgetState extends State<RewardsWidget>
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 600.ms,
-          begin: Offset(0.0, 120.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 120.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -97,8 +92,8 @@ class _RewardsWidgetState extends State<RewardsWidget>
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 600.ms,
-          begin: Offset(-60.0, 0.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(-60.0, 0.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -116,8 +111,8 @@ class _RewardsWidgetState extends State<RewardsWidget>
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 600.ms,
-          begin: Offset(0.0, 80.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 80.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -135,8 +130,8 @@ class _RewardsWidgetState extends State<RewardsWidget>
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 600.ms,
-          begin: Offset(0.0, 120.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 120.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -190,7 +185,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                   letterSpacing: 0.0,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 2.0,
         ),
@@ -199,7 +194,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
           child: Column(
             children: [
               Align(
-                alignment: Alignment(0.0, 0),
+                alignment: const Alignment(0.0, 0),
                 child: TabBar(
                   labelColor: FlutterFlowTheme.of(context).primaryText,
                   unselectedLabelColor:
@@ -208,10 +203,10 @@ class _RewardsWidgetState extends State<RewardsWidget>
                         fontFamily: 'Readex Pro',
                         letterSpacing: 0.0,
                       ),
-                  unselectedLabelStyle: TextStyle(),
+                  unselectedLabelStyle: const TextStyle(),
                   indicatorColor: FlutterFlowTheme.of(context).primary,
-                  padding: EdgeInsets.all(4.0),
-                  tabs: [
+                  padding: const EdgeInsets.all(4.0),
+                  tabs: const [
                     Tab(
                       text: 'Vochers Red',
                     ),
@@ -238,7 +233,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 12.0, 0.0, 0.0),
                                 child: Text(
                                   'Cash Vochers',
@@ -252,7 +247,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                     animationsMap['textOnPageLoadAnimation1']!),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 12.0, 0.0, 0.0),
                                 child: ListView(
                                   padding: EdgeInsets.zero,
@@ -261,7 +256,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                   scrollDirection: Axis.vertical,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 8.0),
                                       child: Container(
                                         width: double.infinity,
@@ -269,7 +264,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                         decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryBackground,
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
                                               blurRadius: 4.0,
                                               color: Color(0x520E151B),
@@ -283,7 +278,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                               BorderRadius.circular(8.0),
                                         ),
                                         child: Padding(
-                                          padding: EdgeInsets.all(8.0),
+                                          padding: const EdgeInsets.all(8.0),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
                                             focusColor: Colors.transparent,
@@ -301,9 +296,9 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                                           builder:
                                                               (alertDialogContext) {
                                                             return AlertDialog(
-                                                              title: Text(
+                                                              title: const Text(
                                                                   'Redemption'),
-                                                              content: Text(
+                                                              content: const Text(
                                                                   'Points is enough to redeem the vocher1, A'),
                                                               actions: [
                                                                 TextButton(
@@ -311,7 +306,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                                                       Navigator.pop(
                                                                           alertDialogContext,
                                                                           false),
-                                                                  child: Text(
+                                                                  child: const Text(
                                                                       'Cancel'),
                                                                 ),
                                                                 TextButton(
@@ -319,7 +314,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                                                       Navigator.pop(
                                                                           alertDialogContext,
                                                                           true),
-                                                                  child: Text(
+                                                                  child: const Text(
                                                                       'Confirm'),
                                                                 ),
                                                               ],
@@ -344,7 +339,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                                                 .primaryText,
                                                       ),
                                                     ),
-                                                    duration: Duration(
+                                                    duration: const Duration(
                                                         milliseconds: 4000),
                                                     backgroundColor:
                                                         FlutterFlowTheme.of(
@@ -373,7 +368,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                                 Expanded(
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(12.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Column(
@@ -432,7 +427,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 8.0),
                                       child: Container(
                                         width: double.infinity,
@@ -440,7 +435,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                         decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryBackground,
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
                                               blurRadius: 4.0,
                                               color: Color(0x520E151B),
@@ -454,7 +449,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                               BorderRadius.circular(8.0),
                                         ),
                                         child: Padding(
-                                          padding: EdgeInsets.all(8.0),
+                                          padding: const EdgeInsets.all(8.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             mainAxisAlignment:
@@ -472,7 +467,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                               ),
                                               Expanded(
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           12.0, 0.0, 0.0, 0.0),
                                                   child: Column(
@@ -536,7 +531,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                     'listViewOnPageLoadAnimation1']!),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 12.0, 0.0, 0.0),
                                 child: ListView(
                                   padding: EdgeInsets.zero,
@@ -545,7 +540,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                   scrollDirection: Axis.vertical,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 8.0),
                                       child: Container(
                                         width: double.infinity,
@@ -553,7 +548,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                         decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryBackground,
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
                                               blurRadius: 4.0,
                                               color: Color(0x520E151B),
@@ -567,7 +562,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                               BorderRadius.circular(8.0),
                                         ),
                                         child: Padding(
-                                          padding: EdgeInsets.all(8.0),
+                                          padding: const EdgeInsets.all(8.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             mainAxisAlignment:
@@ -585,7 +580,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                               ),
                                               Expanded(
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           12.0, 0.0, 0.0, 0.0),
                                                   child: Column(
@@ -645,7 +640,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 8.0),
                                       child: Container(
                                         width: double.infinity,
@@ -653,7 +648,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                         decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryBackground,
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
                                               blurRadius: 5.0,
                                               color: Color(0x520E151B),
@@ -667,7 +662,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                               BorderRadius.circular(8.0),
                                         ),
                                         child: Padding(
-                                          padding: EdgeInsets.all(8.0),
+                                          padding: const EdgeInsets.all(8.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             mainAxisAlignment:
@@ -685,7 +680,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                               ),
                                               Expanded(
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           12.0, 0.0, 0.0, 0.0),
                                                   child: Column(
@@ -762,7 +757,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 12.0, 0.0, 0.0),
                                 child: Text(
                                   'Cash Vochers',
@@ -776,7 +771,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                     animationsMap['textOnPageLoadAnimation2']!),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 12.0, 0.0, 0.0),
                                 child: ListView(
                                   padding: EdgeInsets.zero,
@@ -785,7 +780,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                   scrollDirection: Axis.vertical,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 8.0),
                                       child: Container(
                                         width: double.infinity,
@@ -793,7 +788,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                         decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryBackground,
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
                                               blurRadius: 4.0,
                                               color: Color(0x520E151B),
@@ -807,7 +802,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                               BorderRadius.circular(8.0),
                                         ),
                                         child: Padding(
-                                          padding: EdgeInsets.all(8.0),
+                                          padding: const EdgeInsets.all(8.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             mainAxisAlignment:
@@ -825,7 +820,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                               ),
                                               Expanded(
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           12.0, 0.0, 0.0, 0.0),
                                                   child: Column(
@@ -885,7 +880,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 8.0),
                                       child: Container(
                                         width: double.infinity,
@@ -893,7 +888,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                         decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryBackground,
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
                                               blurRadius: 4.0,
                                               color: Color(0x520E151B),
@@ -907,7 +902,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                               BorderRadius.circular(8.0),
                                         ),
                                         child: Padding(
-                                          padding: EdgeInsets.all(8.0),
+                                          padding: const EdgeInsets.all(8.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             mainAxisAlignment:
@@ -925,7 +920,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                               ),
                                               Expanded(
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           12.0, 0.0, 0.0, 0.0),
                                                   child: Column(
@@ -989,7 +984,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                     'listViewOnPageLoadAnimation3']!),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 12.0, 0.0, 0.0),
                                 child: ListView(
                                   padding: EdgeInsets.zero,
@@ -998,7 +993,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                   scrollDirection: Axis.vertical,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 8.0),
                                       child: Container(
                                         width: double.infinity,
@@ -1006,7 +1001,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                         decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryBackground,
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
                                               blurRadius: 4.0,
                                               color: Color(0x520E151B),
@@ -1020,7 +1015,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                               BorderRadius.circular(8.0),
                                         ),
                                         child: Padding(
-                                          padding: EdgeInsets.all(8.0),
+                                          padding: const EdgeInsets.all(8.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             mainAxisAlignment:
@@ -1038,7 +1033,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                               ),
                                               Expanded(
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           12.0, 0.0, 0.0, 0.0),
                                                   child: Column(
@@ -1098,7 +1093,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 8.0),
                                       child: Container(
                                         width: double.infinity,
@@ -1106,7 +1101,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                         decoration: BoxDecoration(
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryBackground,
-                                          boxShadow: [
+                                          boxShadow: const [
                                             BoxShadow(
                                               blurRadius: 5.0,
                                               color: Color(0x520E151B),
@@ -1120,7 +1115,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                               BorderRadius.circular(8.0),
                                         ),
                                         child: Padding(
-                                          padding: EdgeInsets.all(8.0),
+                                          padding: const EdgeInsets.all(8.0),
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             mainAxisAlignment:
@@ -1138,7 +1133,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                               ),
                                               Expanded(
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           12.0, 0.0, 0.0, 0.0),
                                                   child: Column(

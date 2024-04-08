@@ -3,10 +3,7 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'success_model.dart';
 export 'success_model.dart';
 
@@ -39,22 +36,22 @@ class _SuccessWidgetState extends State<SuccessWidget>
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 300.ms,
-          begin: Offset(0.8, 0.8),
-          end: Offset(1.0, 1.0),
+          begin: const Offset(0.8, 0.8),
+          end: const Offset(1.0, 1.0),
         ),
         TiltEffect(
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 300.ms,
-          begin: Offset(0, 1.396),
-          end: Offset(0, 0),
+          begin: const Offset(0, 1.396),
+          end: const Offset(0, 0),
         ),
         MoveEffect(
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 300.ms,
-          begin: Offset(0.0, 40.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 40.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -73,22 +70,22 @@ class _SuccessWidgetState extends State<SuccessWidget>
           curve: Curves.easeInOut,
           delay: 100.ms,
           duration: 300.ms,
-          begin: Offset(0.8, 0.8),
-          end: Offset(1.0, 1.0),
+          begin: const Offset(0.8, 0.8),
+          end: const Offset(1.0, 1.0),
         ),
         TiltEffect(
           curve: Curves.easeInOut,
           delay: 100.ms,
           duration: 300.ms,
-          begin: Offset(0, 1.396),
-          end: Offset(0, 0),
+          begin: const Offset(0, 1.396),
+          end: const Offset(0, 0),
         ),
         MoveEffect(
           curve: Curves.easeInOut,
           delay: 100.ms,
           duration: 300.ms,
-          begin: Offset(0.0, 40.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 40.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -107,22 +104,22 @@ class _SuccessWidgetState extends State<SuccessWidget>
           curve: Curves.easeInOut,
           delay: 150.ms,
           duration: 300.ms,
-          begin: Offset(0.8, 0.8),
-          end: Offset(1.0, 1.0),
+          begin: const Offset(0.8, 0.8),
+          end: const Offset(1.0, 1.0),
         ),
         TiltEffect(
           curve: Curves.easeInOut,
           delay: 150.ms,
           duration: 300.ms,
-          begin: Offset(0, 1.396),
-          end: Offset(0, 0),
+          begin: const Offset(0, 1.396),
+          end: const Offset(0, 0),
         ),
         MoveEffect(
           curve: Curves.easeInOut,
           delay: 150.ms,
           duration: 300.ms,
-          begin: Offset(0.0, 40.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 40.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -141,22 +138,22 @@ class _SuccessWidgetState extends State<SuccessWidget>
           curve: Curves.easeInOut,
           delay: 200.ms,
           duration: 300.ms,
-          begin: Offset(0.8, 0.8),
-          end: Offset(1.0, 1.0),
+          begin: const Offset(0.8, 0.8),
+          end: const Offset(1.0, 1.0),
         ),
         TiltEffect(
           curve: Curves.easeInOut,
           delay: 200.ms,
           duration: 300.ms,
-          begin: Offset(0, 1.396),
-          end: Offset(0, 0),
+          begin: const Offset(0, 1.396),
+          end: const Offset(0, 0),
         ),
         MoveEffect(
           curve: Curves.easeInOut,
           delay: 200.ms,
           duration: 300.ms,
-          begin: Offset(0.0, 40.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 40.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -175,22 +172,22 @@ class _SuccessWidgetState extends State<SuccessWidget>
           curve: Curves.easeInOut,
           delay: 250.ms,
           duration: 300.ms,
-          begin: Offset(0.8, 0.8),
-          end: Offset(1.0, 1.0),
+          begin: const Offset(0.8, 0.8),
+          end: const Offset(1.0, 1.0),
         ),
         TiltEffect(
           curve: Curves.easeInOut,
           delay: 250.ms,
           duration: 300.ms,
-          begin: Offset(0, 1.396),
-          end: Offset(0, 0),
+          begin: const Offset(0, 1.396),
+          end: const Offset(0, 0),
         ),
         MoveEffect(
           curve: Curves.easeInOut,
           delay: 250.ms,
           duration: 300.ms,
-          begin: Offset(0.0, 40.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 40.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -209,22 +206,22 @@ class _SuccessWidgetState extends State<SuccessWidget>
           curve: Curves.easeInOut,
           delay: 350.ms,
           duration: 300.ms,
-          begin: Offset(0.8, 0.8),
-          end: Offset(1.0, 1.0),
+          begin: const Offset(0.8, 0.8),
+          end: const Offset(1.0, 1.0),
         ),
         TiltEffect(
           curve: Curves.easeInOut,
           delay: 350.ms,
           duration: 300.ms,
-          begin: Offset(1.222, 0),
-          end: Offset(0, 0),
+          begin: const Offset(1.222, 0),
+          end: const Offset(0, 0),
         ),
         MoveEffect(
           curve: Curves.easeInOut,
           delay: 350.ms,
           duration: 300.ms,
-          begin: Offset(0.0, 40.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 40.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -253,11 +250,11 @@ class _SuccessWidgetState extends State<SuccessWidget>
           : FocusScope.of(context).unfocus(),
       child: Scaffold(
         key: scaffoldKey,
-        backgroundColor: Color(0xFFF1F4F8),
+        backgroundColor: const Color(0xFFF1F4F8),
         appBar: AppBar(
-          backgroundColor: Color(0xFFF1F4F8),
+          backgroundColor: const Color(0xFFF1F4F8),
           automaticallyImplyLeading: false,
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -268,18 +265,18 @@ class _SuccessWidgetState extends State<SuccessWidget>
             children: [
               Expanded(
                 child: Align(
-                  alignment: AlignmentDirectional(0.0, -1.0),
+                  alignment: const AlignmentDirectional(0.0, -1.0),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 4.0, 16.0, 12.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 4.0, 16.0, 12.0),
                     child: Container(
                       width: double.infinity,
-                      constraints: BoxConstraints(
+                      constraints: const BoxConstraints(
                         maxWidth: 770.0,
                       ),
                       decoration: BoxDecoration(
                         color: Colors.white,
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             blurRadius: 3.0,
                             color: Color(0x33000000),
@@ -291,11 +288,11 @@ class _SuccessWidgetState extends State<SuccessWidget>
                         ],
                         borderRadius: BorderRadius.circular(12.0),
                         border: Border.all(
-                          color: Color(0xFFE5E7EB),
+                          color: const Color(0xFFE5E7EB),
                         ),
                       ),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 16.0, 16.0, 12.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
@@ -303,35 +300,35 @@ class _SuccessWidgetState extends State<SuccessWidget>
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Align(
-                              alignment: AlignmentDirectional(0.0, -1.0),
+                              alignment: const AlignmentDirectional(0.0, -1.0),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 44.0, 0.0, 0.0),
                                 child: Container(
                                   width: 120.0,
                                   height: 120.0,
                                   decoration: BoxDecoration(
-                                    color: Color(0x4C39D2C0),
+                                    color: const Color(0x4C39D2C0),
                                     shape: BoxShape.circle,
                                     border: Border.all(
-                                      color: Color(0x4C39D2C0),
+                                      color: const Color(0x4C39D2C0),
                                       width: 4.0,
                                     ),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsets.all(8.0),
+                                    padding: const EdgeInsets.all(8.0),
                                     child: Container(
                                       width: 140.0,
                                       height: 140.0,
                                       decoration: BoxDecoration(
-                                        color: Color(0xFF39D2C0),
+                                        color: const Color(0xFF39D2C0),
                                         shape: BoxShape.circle,
                                         border: Border.all(
-                                          color: Color(0x4C39D2C0),
+                                          color: const Color(0x4C39D2C0),
                                           width: 4.0,
                                         ),
                                       ),
-                                      child: Icon(
+                                      child: const Icon(
                                         Icons.check_rounded,
                                         color: Colors.white,
                                         size: 64.0,
@@ -343,14 +340,14 @@ class _SuccessWidgetState extends State<SuccessWidget>
                               ),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(0.0, -1.0),
+                              alignment: const AlignmentDirectional(0.0, -1.0),
                               child: Text(
                                 'Congrats!',
                                 style: FlutterFlowTheme.of(context)
                                     .displaySmall
                                     .override(
                                       fontFamily: 'Outfit',
-                                      color: Color(0xFF15161E),
+                                      color: const Color(0xFF15161E),
                                       fontSize: 36.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w600,
@@ -359,14 +356,14 @@ class _SuccessWidgetState extends State<SuccessWidget>
                                   animationsMap['textOnPageLoadAnimation1']!),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(0.0, -1.0),
+                              alignment: const AlignmentDirectional(0.0, -1.0),
                               child: Text(
                                 'Successful login',
                                 style: FlutterFlowTheme.of(context)
                                     .labelMedium
                                     .override(
                                       fontFamily: 'Outfit',
-                                      color: Color(0xFF606A85),
+                                      color: const Color(0xFF606A85),
                                       fontSize: 14.0,
                                       letterSpacing: 0.0,
                                       fontWeight: FontWeight.w500,
@@ -374,7 +371,7 @@ class _SuccessWidgetState extends State<SuccessWidget>
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation2']!),
                             ),
-                            Divider(
+                            const Divider(
                               height: 44.0,
                               thickness: 2.0,
                               color: Color(0xFFE5E7EB),
@@ -382,9 +379,9 @@ class _SuccessWidgetState extends State<SuccessWidget>
                                 animationsMap['dividerOnPageLoadAnimation']!),
                             Expanded(
                               child: Align(
-                                alignment: AlignmentDirectional(0.0, 0.0),
+                                alignment: const AlignmentDirectional(0.0, 0.0),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       12.0, 0.0, 12.0, 0.0),
                                   child: Column(
                                     mainAxisSize: MainAxisSize.max,
@@ -399,7 +396,7 @@ class _SuccessWidgetState extends State<SuccessWidget>
                                             .headlineSmall
                                             .override(
                                               fontFamily: 'Outfit',
-                                              color: Color(0xFF15161E),
+                                              color: const Color(0xFF15161E),
                                               fontSize: 22.0,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.bold,
@@ -411,15 +408,15 @@ class _SuccessWidgetState extends State<SuccessWidget>
                                             .labelMedium
                                             .override(
                                               fontFamily: 'Outfit',
-                                              color: Color(0xFF606A85),
+                                              color: const Color(0xFF606A85),
                                               fontSize: 14.0,
                                               letterSpacing: 0.0,
                                               fontWeight: FontWeight.w500,
                                             ),
                                       ),
                                     ]
-                                        .divide(SizedBox(height: 4.0))
-                                        .addToEnd(SizedBox(height: 12.0)),
+                                        .divide(const SizedBox(height: 4.0))
+                                        .addToEnd(const SizedBox(height: 12.0)),
                                   ).animateOnPageLoad(animationsMap[
                                       'columnOnPageLoadAnimation']!),
                                 ),
@@ -433,9 +430,9 @@ class _SuccessWidgetState extends State<SuccessWidget>
                               options: FFButtonOptions(
                                 width: double.infinity,
                                 height: 48.0,
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     24.0, 0.0, 24.0, 0.0),
-                                iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
                                 color: FlutterFlowTheme.of(context).success,
                                 textStyle: FlutterFlowTheme.of(context)
@@ -448,7 +445,7 @@ class _SuccessWidgetState extends State<SuccessWidget>
                                       fontWeight: FontWeight.w500,
                                     ),
                                 elevation: 3.0,
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Colors.transparent,
                                   width: 1.0,
                                 ),
@@ -456,7 +453,7 @@ class _SuccessWidgetState extends State<SuccessWidget>
                               ),
                             ).animateOnPageLoad(
                                 animationsMap['buttonOnPageLoadAnimation']!),
-                          ].divide(SizedBox(height: 8.0)),
+                          ].divide(const SizedBox(height: 8.0)),
                         ),
                       ),
                     ),

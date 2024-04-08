@@ -5,8 +5,6 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'account_creation_model.dart';
 export 'account_creation_model.dart';
 
@@ -102,17 +100,17 @@ class _AccountCreationWidgetState extends State<AccountCreationWidget> {
               context.pushNamed('LoginPage');
             },
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
         body: SafeArea(
           top: true,
           child: Align(
-            alignment: AlignmentDirectional(0.0, 0.0),
+            alignment: const AlignmentDirectional(0.0, 0.0),
             child: Container(
               width: double.infinity,
-              constraints: BoxConstraints(
+              constraints: const BoxConstraints(
                 maxWidth: 670.0,
               ),
               decoration: BoxDecoration(
@@ -125,14 +123,14 @@ class _AccountCreationWidgetState extends State<AccountCreationWidget> {
                   Expanded(
                     child: Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(12.0, 0.0, 12.0, 0.0),
                       child: SingleChildScrollView(
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 32.0, 0.0, 8.0),
                               child: Text(
                                 'Create Account',
@@ -146,7 +144,7 @@ class _AccountCreationWidgetState extends State<AccountCreationWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 12.0, 16.0, 0.0),
                               child: TextFormField(
                                 controller: _model.textController1,
@@ -208,7 +206,7 @@ class _AccountCreationWidgetState extends State<AccountCreationWidget> {
                                   fillColor: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
                                   contentPadding:
-                                      EdgeInsetsDirectional.fromSTEB(
+                                      const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 16.0, 16.0, 8.0),
                                 ),
                                 style: FlutterFlowTheme.of(context)
@@ -224,7 +222,7 @@ class _AccountCreationWidgetState extends State<AccountCreationWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 12.0, 16.0, 0.0),
                               child: TextFormField(
                                 controller: _model.textController2,
@@ -285,7 +283,7 @@ class _AccountCreationWidgetState extends State<AccountCreationWidget> {
                                   fillColor: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
                                   contentPadding:
-                                      EdgeInsetsDirectional.fromSTEB(
+                                      const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 16.0, 16.0, 8.0),
                                 ),
                                 style: FlutterFlowTheme.of(context)
@@ -302,7 +300,7 @@ class _AccountCreationWidgetState extends State<AccountCreationWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 12.0, 16.0, 0.0),
                               child: TextFormField(
                                 controller: _model.textController3,
@@ -363,7 +361,7 @@ class _AccountCreationWidgetState extends State<AccountCreationWidget> {
                                   fillColor: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
                                   contentPadding:
-                                      EdgeInsetsDirectional.fromSTEB(
+                                      const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 16.0, 16.0, 8.0),
                                   suffixIcon: InkWell(
                                     onTap: () => setState(
@@ -394,7 +392,7 @@ class _AccountCreationWidgetState extends State<AccountCreationWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 12.0, 16.0, 0.0),
                               child: TextFormField(
                                 controller: _model.textController4,
@@ -456,7 +454,7 @@ class _AccountCreationWidgetState extends State<AccountCreationWidget> {
                                   fillColor: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
                                   contentPadding:
-                                      EdgeInsetsDirectional.fromSTEB(
+                                      const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 16.0, 16.0, 8.0),
                                   suffixIcon: InkWell(
                                     onTap: () => setState(
@@ -487,7 +485,7 @@ class _AccountCreationWidgetState extends State<AccountCreationWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 12.0, 16.0, 0.0),
                               child: TextFormField(
                                 controller: _model.textController5,
@@ -549,7 +547,7 @@ class _AccountCreationWidgetState extends State<AccountCreationWidget> {
                                   fillColor: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
                                   contentPadding:
-                                      EdgeInsetsDirectional.fromSTEB(
+                                      const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 16.0, 16.0, 8.0),
                                 ),
                                 style: FlutterFlowTheme.of(context)
@@ -564,7 +562,7 @@ class _AccountCreationWidgetState extends State<AccountCreationWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 12.0, 16.0, 0.0),
                               child: TextFormField(
                                 controller: _model.textController6,
@@ -626,7 +624,7 @@ class _AccountCreationWidgetState extends State<AccountCreationWidget> {
                                   fillColor: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
                                   contentPadding:
-                                      EdgeInsetsDirectional.fromSTEB(
+                                      const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 16.0, 16.0, 8.0),
                                 ),
                                 style: FlutterFlowTheme.of(context)
@@ -641,7 +639,7 @@ class _AccountCreationWidgetState extends State<AccountCreationWidget> {
                               ),
                             ),
                             Align(
-                              alignment: AlignmentDirectional(0.0, 1.0),
+                              alignment: const AlignmentDirectional(0.0, 1.0),
                               child: Theme(
                                 data: ThemeData(
                                   unselectedWidgetColor:
@@ -673,7 +671,7 @@ class _AccountCreationWidgetState extends State<AccountCreationWidget> {
                                   controlAffinity:
                                       ListTileControlAffinity.leading,
                                   contentPadding:
-                                      EdgeInsetsDirectional.fromSTEB(
+                                      const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 0.0, 16.0, 0.0),
                                   shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(4.0),
@@ -690,7 +688,7 @@ class _AccountCreationWidgetState extends State<AccountCreationWidget> {
                       ? MediaQuery.viewInsetsOf(context).bottom > 0
                       : _isKeyboardVisible))
                     Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(
+                      padding: const EdgeInsetsDirectional.fromSTEB(
                           16.0, 12.0, 16.0, 24.0),
                       child: FFButtonWidget(
                         onPressed: () async {
@@ -700,9 +698,9 @@ class _AccountCreationWidgetState extends State<AccountCreationWidget> {
                         options: FFButtonOptions(
                           width: double.infinity,
                           height: 60.0,
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
-                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 0.0),
                           color: FlutterFlowTheme.of(context).success,
                           textStyle:
@@ -713,7 +711,7 @@ class _AccountCreationWidgetState extends State<AccountCreationWidget> {
                                     letterSpacing: 0.0,
                                   ),
                           elevation: 4.0,
-                          borderSide: BorderSide(
+                          borderSide: const BorderSide(
                             color: Colors.transparent,
                             width: 1.0,
                           ),

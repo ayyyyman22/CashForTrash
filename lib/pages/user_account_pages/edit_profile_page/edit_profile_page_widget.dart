@@ -3,8 +3,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'edit_profile_page_model.dart';
 export 'edit_profile_page_model.dart';
 
@@ -69,9 +67,9 @@ class _EditProfilePageWidgetState extends State<EditProfilePageWidget> {
             },
           ),
           title: Align(
-            alignment: AlignmentDirectional(-1.5, 0.0),
+            alignment: const AlignmentDirectional(-1.5, 0.0),
             child: Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
               child: Text(
                 'Edit Profile',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
@@ -81,7 +79,7 @@ class _EditProfilePageWidgetState extends State<EditProfilePageWidget> {
               ),
             ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -93,7 +91,7 @@ class _EditProfilePageWidgetState extends State<EditProfilePageWidget> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 50.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 50.0),
                 child: Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
@@ -102,12 +100,12 @@ class _EditProfilePageWidgetState extends State<EditProfilePageWidget> {
                   ),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 16.0),
                           child: TextFormField(
                             controller: _model.textController1,
@@ -142,32 +140,32 @@ class _EditProfilePageWidgetState extends State<EditProfilePageWidget> {
                                   topRight: Radius.circular(4.0),
                                 ),
                               ),
-                              focusedBorder: UnderlineInputBorder(
+                              focusedBorder: const UnderlineInputBorder(
                                 borderSide: BorderSide(
                                   color: Color(0x00000000),
                                   width: 2.0,
                                 ),
-                                borderRadius: const BorderRadius.only(
+                                borderRadius: BorderRadius.only(
                                   topLeft: Radius.circular(4.0),
                                   topRight: Radius.circular(4.0),
                                 ),
                               ),
-                              errorBorder: UnderlineInputBorder(
+                              errorBorder: const UnderlineInputBorder(
                                 borderSide: BorderSide(
                                   color: Color(0x00000000),
                                   width: 2.0,
                                 ),
-                                borderRadius: const BorderRadius.only(
+                                borderRadius: BorderRadius.only(
                                   topLeft: Radius.circular(4.0),
                                   topRight: Radius.circular(4.0),
                                 ),
                               ),
-                              focusedErrorBorder: UnderlineInputBorder(
+                              focusedErrorBorder: const UnderlineInputBorder(
                                 borderSide: BorderSide(
                                   color: Color(0x00000000),
                                   width: 2.0,
                                 ),
-                                borderRadius: const BorderRadius.only(
+                                borderRadius: BorderRadius.only(
                                   topLeft: Radius.circular(4.0),
                                   topRight: Radius.circular(4.0),
                                 ),
@@ -185,7 +183,7 @@ class _EditProfilePageWidgetState extends State<EditProfilePageWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 16.0),
                           child: TextFormField(
                             controller: _model.textController2,
@@ -220,32 +218,32 @@ class _EditProfilePageWidgetState extends State<EditProfilePageWidget> {
                                   topRight: Radius.circular(4.0),
                                 ),
                               ),
-                              focusedBorder: UnderlineInputBorder(
+                              focusedBorder: const UnderlineInputBorder(
                                 borderSide: BorderSide(
                                   color: Color(0x00000000),
                                   width: 2.0,
                                 ),
-                                borderRadius: const BorderRadius.only(
+                                borderRadius: BorderRadius.only(
                                   topLeft: Radius.circular(4.0),
                                   topRight: Radius.circular(4.0),
                                 ),
                               ),
-                              errorBorder: UnderlineInputBorder(
+                              errorBorder: const UnderlineInputBorder(
                                 borderSide: BorderSide(
                                   color: Color(0x00000000),
                                   width: 2.0,
                                 ),
-                                borderRadius: const BorderRadius.only(
+                                borderRadius: BorderRadius.only(
                                   topLeft: Radius.circular(4.0),
                                   topRight: Radius.circular(4.0),
                                 ),
                               ),
-                              focusedErrorBorder: UnderlineInputBorder(
+                              focusedErrorBorder: const UnderlineInputBorder(
                                 borderSide: BorderSide(
                                   color: Color(0x00000000),
                                   width: 2.0,
                                 ),
-                                borderRadius: const BorderRadius.only(
+                                borderRadius: BorderRadius.only(
                                   topLeft: Radius.circular(4.0),
                                   topRight: Radius.circular(4.0),
                                 ),
@@ -263,7 +261,7 @@ class _EditProfilePageWidgetState extends State<EditProfilePageWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 32.0),
                           child: TextFormField(
                             controller: _model.textController3,
@@ -298,32 +296,32 @@ class _EditProfilePageWidgetState extends State<EditProfilePageWidget> {
                                   topRight: Radius.circular(4.0),
                                 ),
                               ),
-                              focusedBorder: UnderlineInputBorder(
+                              focusedBorder: const UnderlineInputBorder(
                                 borderSide: BorderSide(
                                   color: Color(0x00000000),
                                   width: 2.0,
                                 ),
-                                borderRadius: const BorderRadius.only(
+                                borderRadius: BorderRadius.only(
                                   topLeft: Radius.circular(4.0),
                                   topRight: Radius.circular(4.0),
                                 ),
                               ),
-                              errorBorder: UnderlineInputBorder(
+                              errorBorder: const UnderlineInputBorder(
                                 borderSide: BorderSide(
                                   color: Color(0x00000000),
                                   width: 2.0,
                                 ),
-                                borderRadius: const BorderRadius.only(
+                                borderRadius: BorderRadius.only(
                                   topLeft: Radius.circular(4.0),
                                   topRight: Radius.circular(4.0),
                                 ),
                               ),
-                              focusedErrorBorder: UnderlineInputBorder(
+                              focusedErrorBorder: const UnderlineInputBorder(
                                 borderSide: BorderSide(
                                   color: Color(0x00000000),
                                   width: 2.0,
                                 ),
-                                borderRadius: const BorderRadius.only(
+                                borderRadius: BorderRadius.only(
                                   topLeft: Radius.circular(4.0),
                                   topRight: Radius.circular(4.0),
                                 ),
@@ -341,9 +339,9 @@ class _EditProfilePageWidgetState extends State<EditProfilePageWidget> {
                           ),
                         ),
                         Align(
-                          alignment: AlignmentDirectional(0.0, -2.0),
+                          alignment: const AlignmentDirectional(0.0, -2.0),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 0.0, 16.0, 0.0),
                             child: FFButtonWidget(
                               onPressed: () {
@@ -353,9 +351,9 @@ class _EditProfilePageWidgetState extends State<EditProfilePageWidget> {
                               options: FFButtonOptions(
                                 width: double.infinity,
                                 height: 50.0,
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
-                                iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
                                 color: FlutterFlowTheme.of(context).primary,
                                 textStyle: FlutterFlowTheme.of(context)
@@ -378,7 +376,7 @@ class _EditProfilePageWidgetState extends State<EditProfilePageWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
                 child: Container(
                   width: double.infinity,
                   decoration: BoxDecoration(
@@ -387,14 +385,14 @@ class _EditProfilePageWidgetState extends State<EditProfilePageWidget> {
                   ),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 16.0),
                             child: Text(
                               'Danger Zone',
@@ -409,7 +407,7 @@ class _EditProfilePageWidgetState extends State<EditProfilePageWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 16.0, 0.0),
                           child: FFButtonWidget(
                             onPressed: () {
@@ -419,9 +417,9 @@ class _EditProfilePageWidgetState extends State<EditProfilePageWidget> {
                             options: FFButtonOptions(
                               width: double.infinity,
                               height: 50.0,
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
-                              iconPadding: EdgeInsetsDirectional.fromSTEB(
+                              iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 0.0),
                               color: FlutterFlowTheme.of(context).error,
                               textStyle: FlutterFlowTheme.of(context)

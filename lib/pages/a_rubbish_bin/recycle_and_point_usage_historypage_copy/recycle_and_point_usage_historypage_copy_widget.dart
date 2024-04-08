@@ -3,12 +3,8 @@ import '/flutter_flow/flutter_flow_button_tabbar.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'recycle_and_point_usage_historypage_copy_model.dart';
 export 'recycle_and_point_usage_historypage_copy_model.dart';
 
@@ -42,15 +38,15 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 400.ms,
-          begin: Offset(0.9, 0.9),
-          end: Offset(1.0, 1.0),
+          begin: const Offset(0.9, 0.9),
+          end: const Offset(1.0, 1.0),
         ),
         MoveEffect(
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 400.ms,
-          begin: Offset(0.0, 20.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 20.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -68,15 +64,15 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 400.ms,
-          begin: Offset(0.9, 0.9),
-          end: Offset(1.0, 1.0),
+          begin: const Offset(0.9, 0.9),
+          end: const Offset(1.0, 1.0),
         ),
         MoveEffect(
           curve: Curves.easeInOut,
           delay: 0.ms,
           duration: 400.ms,
-          begin: Offset(0.0, 20.0),
-          end: Offset(0.0, 0.0),
+          begin: const Offset(0.0, 20.0),
+          end: const Offset(0.0, 0.0),
         ),
       ],
     ),
@@ -121,7 +117,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
             borderRadius: 30.0,
             borderWidth: 1.0,
             buttonSize: 60.0,
-            icon: Icon(
+            icon: const Icon(
               Icons.arrow_back_rounded,
               color: Colors.white,
               size: 30.0,
@@ -139,7 +135,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                   letterSpacing: 0.0,
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: true,
           elevation: 2.0,
         ),
@@ -153,7 +149,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                 child: Column(
                   children: [
                     Align(
-                      alignment: Alignment(-1.0, 0),
+                      alignment: const Alignment(-1.0, 0),
                       child: FlutterFlowButtonTabBar(
                         useToggleButtonStyle: false,
                         isScrollable: true,
@@ -162,7 +158,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                   fontFamily: 'Readex Pro',
                                   letterSpacing: 0.0,
                                 ),
-                        unselectedLabelStyle: TextStyle(),
+                        unselectedLabelStyle: const TextStyle(),
                         labelColor: FlutterFlowTheme.of(context).primaryText,
                         unselectedLabelColor:
                             FlutterFlowTheme.of(context).secondaryText,
@@ -171,11 +167,11 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                         borderWidth: 2.0,
                         borderRadius: 12.0,
                         elevation: 0.0,
-                        labelPadding: EdgeInsetsDirectional.fromSTEB(
+                        labelPadding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 0.0, 16.0, 0.0),
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 4.0, 0.0, 12.0),
-                        tabs: [
+                        tabs: const [
                           Tab(
                             text: 'Recycle History',
                           ),
@@ -205,7 +201,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                               scrollDirection: Axis.vertical,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 1.0),
                                   child: Container(
                                     width: 100.0,
@@ -213,7 +209,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                     decoration: BoxDecoration(
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
-                                      boxShadow: [
+                                      boxShadow: const [
                                         BoxShadow(
                                           blurRadius: 0.0,
                                           color: Color(0xFFE0E3E7),
@@ -225,22 +221,22 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                       ],
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           4.0, 0.0, 0.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
                                         children: [
-                                          Container(
+                                          SizedBox(
                                             width: 24.0,
                                             child: Stack(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               children: [
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, -0.7),
                                                   child: Container(
                                                     width: 12.0,
@@ -274,7 +270,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     4.0, 12.0, 0.0, 0.0),
                                             child: Container(
                                               width: 44.0,
@@ -292,7 +288,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                 ),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsets.all(2.0),
+                                                padding: const EdgeInsets.all(2.0),
                                                 child: ClipRRect(
                                                   borderRadius:
                                                       BorderRadius.circular(
@@ -309,7 +305,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                           ),
                                           Expanded(
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 16.0, 16.0, 12.0),
                                               child: Column(
@@ -336,7 +332,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     8.0,
                                                                     0.0,
@@ -362,7 +358,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 4.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -378,7 +374,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 12.0,
                                                                 0.0, 0.0),
                                                     child: Row(
@@ -416,7 +412,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       4.0,
                                                                       0.0,
@@ -437,7 +433,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       0.0,
@@ -478,7 +474,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                       'containerOnPageLoadAnimation1']!),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 1.0),
                                   child: Container(
                                     width: 100.0,
@@ -486,7 +482,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                     decoration: BoxDecoration(
                                       color: FlutterFlowTheme.of(context)
                                           .secondaryBackground,
-                                      boxShadow: [
+                                      boxShadow: const [
                                         BoxShadow(
                                           blurRadius: 0.0,
                                           color: Color(0xFFE0E3E7),
@@ -498,22 +494,22 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                       ],
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           4.0, 0.0, 0.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
                                         children: [
-                                          Container(
+                                          SizedBox(
                                             width: 24.0,
                                             child: Stack(
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               children: [
                                                 Align(
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                           0.0, -0.7),
                                                   child: Container(
                                                     width: 12.0,
@@ -547,7 +543,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     4.0, 12.0, 0.0, 0.0),
                                             child: Container(
                                               width: 44.0,
@@ -565,7 +561,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                 ),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsets.all(2.0),
+                                                padding: const EdgeInsets.all(2.0),
                                                 child: ClipRRect(
                                                   borderRadius:
                                                       BorderRadius.circular(
@@ -582,7 +578,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                           ),
                                           Expanded(
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 16.0, 16.0, 12.0),
                                               child: Column(
@@ -609,7 +605,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     8.0,
                                                                     0.0,
@@ -635,7 +631,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 4.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -651,7 +647,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 12.0,
                                                                 0.0, 0.0),
                                                     child: ClipRRect(
@@ -668,7 +664,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 12.0,
                                                                 0.0, 0.0),
                                                     child: Row(
@@ -706,7 +702,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       4.0,
                                                                       0.0,
@@ -727,7 +723,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       0.0,
@@ -788,7 +784,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                         CrossAxisAlignment.start,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 12.0, 0.0, 0.0),
                                         child: Text(
                                           'This Month',
@@ -808,7 +804,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 12.0, 0.0, 1.0),
                                             child: Container(
                                               width: double.infinity,
@@ -822,7 +818,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .lineColor,
-                                                    offset: Offset(
+                                                    offset: const Offset(
                                                       0.0,
                                                       1.0,
                                                     ),
@@ -830,7 +826,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                 ],
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 5.0, 16.0, 5.0),
                                                 child: Row(
@@ -864,7 +860,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       5.0,
@@ -903,7 +899,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 1.0),
                                             child: Container(
                                               width: double.infinity,
@@ -917,7 +913,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .lineColor,
-                                                    offset: Offset(
+                                                    offset: const Offset(
                                                       0.0,
                                                       1.0,
                                                     ),
@@ -925,7 +921,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                 ],
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 5.0, 16.0, 5.0),
                                                 child: Row(
@@ -959,7 +955,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       5.0,
@@ -998,7 +994,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 1.0),
                                             child: Container(
                                               width: double.infinity,
@@ -1012,7 +1008,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .lineColor,
-                                                    offset: Offset(
+                                                    offset: const Offset(
                                                       0.0,
                                                       1.0,
                                                     ),
@@ -1020,7 +1016,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                 ],
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 5.0, 16.0, 5.0),
                                                 child: Row(
@@ -1054,7 +1050,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       5.0,
@@ -1093,7 +1089,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 1.0),
                                             child: Container(
                                               width: double.infinity,
@@ -1107,7 +1103,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .lineColor,
-                                                    offset: Offset(
+                                                    offset: const Offset(
                                                       0.0,
                                                       1.0,
                                                     ),
@@ -1115,7 +1111,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                 ],
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 5.0, 16.0, 5.0),
                                                 child: Row(
@@ -1149,7 +1145,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       5.0,
@@ -1189,7 +1185,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                         ],
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 12.0, 0.0, 0.0),
                                         child: Text(
                                           'Last Month',
@@ -1209,7 +1205,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 12.0, 0.0, 1.0),
                                             child: Container(
                                               width: double.infinity,
@@ -1223,7 +1219,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .lineColor,
-                                                    offset: Offset(
+                                                    offset: const Offset(
                                                       0.0,
                                                       1.0,
                                                     ),
@@ -1231,7 +1227,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                 ],
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 5.0, 16.0, 5.0),
                                                 child: Row(
@@ -1265,7 +1261,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       5.0,
@@ -1304,7 +1300,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 1.0),
                                             child: Container(
                                               width: double.infinity,
@@ -1318,7 +1314,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .lineColor,
-                                                    offset: Offset(
+                                                    offset: const Offset(
                                                       0.0,
                                                       1.0,
                                                     ),
@@ -1326,7 +1322,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                 ],
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 5.0, 16.0, 5.0),
                                                 child: Row(
@@ -1360,7 +1356,7 @@ class _RecycleAndPointUsageHistorypageCopyWidgetState
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       5.0,

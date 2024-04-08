@@ -1,8 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 import '/backend/backend.dart';
 import '/backend/schema/structs/index.dart';
@@ -12,10 +10,7 @@ import '/auth/base_auth_user_provider.dart';
 import '/index.dart';
 import '/main.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/lat_lng.dart';
-import '/flutter_flow/place.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'serialization_util.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -80,23 +75,23 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? NavBarPage() : LoginPageWidget(),
+          appStateNotifier.loggedIn ? const NavBarPage() : const LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? NavBarPage() : LoginPageWidget(),
+              appStateNotifier.loggedIn ? const NavBarPage() : const LoginPageWidget(),
         ),
         FFRoute(
           name: 'LoginPage',
           path: '/loginPage',
-          builder: (context, params) => LoginPageWidget(),
+          builder: (context, params) => const LoginPageWidget(),
         ),
         FFRoute(
           name: 'ForgotPasswordPage',
           path: '/forgotPasswordPage',
-          builder: (context, params) => ForgotPasswordPageWidget(),
+          builder: (context, params) => const ForgotPasswordPageWidget(),
         ),
         FFRoute(
           name: 'AccountCreation',
@@ -111,79 +106,79 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'backe',
           path: '/backe',
-          builder: (context, params) => BackeWidget(),
+          builder: (context, params) => const BackeWidget(),
         ),
         FFRoute(
           name: 'Success',
           path: '/success',
-          builder: (context, params) => SuccessWidget(),
+          builder: (context, params) => const SuccessWidget(),
         ),
         FFRoute(
           name: 'RecycleAndPointUsageHistorypage',
           path: '/Historypage',
           builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'RecycleAndPointUsageHistorypage')
-              : RecycleAndPointUsageHistorypageWidget(),
+              ? const NavBarPage(initialPage: 'RecycleAndPointUsageHistorypage')
+              : const RecycleAndPointUsageHistorypageWidget(),
         ),
         FFRoute(
           name: 'Accountpage',
           path: '/accountpage',
           builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'Accountpage')
-              : AccountpageWidget(),
+              ? const NavBarPage(initialPage: 'Accountpage')
+              : const AccountpageWidget(),
         ),
         FFRoute(
           name: 'Rewards',
           path: '/rewardsPage',
           builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'Rewards')
-              : RewardsWidget(),
+              ? const NavBarPage(initialPage: 'Rewards')
+              : const RewardsWidget(),
         ),
         FFRoute(
           name: 'EditProfilePage',
           path: '/editProfilePage',
-          builder: (context, params) => EditProfilePageWidget(),
+          builder: (context, params) => const EditProfilePageWidget(),
         ),
         FFRoute(
           name: 'RecycleAndPointUsageHistorypageCopy',
           path: '/recycleAndPointUsageHistorypagecopy',
           builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'RecycleAndPointUsageHistorypageCopy')
-              : RecycleAndPointUsageHistorypageCopyWidget(),
+              ? const NavBarPage(initialPage: 'RecycleAndPointUsageHistorypageCopy')
+              : const RecycleAndPointUsageHistorypageCopyWidget(),
         ),
         FFRoute(
           name: 'ChangePasswordPage',
           path: '/changePasswordPage',
-          builder: (context, params) => ChangePasswordPageWidget(),
+          builder: (context, params) => const ChangePasswordPageWidget(),
         ),
         FFRoute(
           name: 'HomePage',
           path: '/homePage',
           builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'HomePage')
-              : HomePageWidget(),
+              ? const NavBarPage(initialPage: 'HomePage')
+              : const HomePageWidget(),
         ),
         FFRoute(
           name: 'OTPPage',
           path: '/oTPPage',
-          builder: (context, params) => OTPPageWidget(),
+          builder: (context, params) => const OTPPageWidget(),
         ),
         FFRoute(
           name: 'example',
           path: '/example',
-          builder: (context, params) => ExampleWidget(),
+          builder: (context, params) => const ExampleWidget(),
         ),
         FFRoute(
           name: 'RecyclingPage',
           path: '/recyclingPage',
           builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'RecyclingPage')
-              : RecyclingPageWidget(),
+              ? const NavBarPage(initialPage: 'RecyclingPage')
+              : const RecyclingPageWidget(),
         ),
         FFRoute(
           name: 'HomePage2',
           path: '/homePage2',
-          builder: (context, params) => HomePage2Widget(),
+          builder: (context, params) => const HomePage2Widget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -423,7 +418,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
 }
 
 class RootPageContext {

@@ -2,11 +2,7 @@ import '/flutter_flow/flutter_flow_place_picker.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import '/flutter_flow/place.dart';
-import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'home_page_model.dart';
 export 'home_page_model.dart';
 
@@ -47,7 +43,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         floatingActionButton: Align(
-          alignment: AlignmentDirectional(0.1, 1.1),
+          alignment: const AlignmentDirectional(0.1, 1.1),
           child: FloatingActionButton(
             onPressed: () {
               print('FloatingActionButton pressed ...');
@@ -62,11 +58,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
           ),
         ),
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(100.0),
+          preferredSize: const Size.fromHeight(100.0),
           child: AppBar(
             backgroundColor: FlutterFlowTheme.of(context).primary,
             automaticallyImplyLeading: false,
-            actions: [],
+            actions: const [],
             flexibleSpace: FlexibleSpaceBar(
               background: ClipRRect(
                 borderRadius: BorderRadius.circular(8.0),
@@ -79,7 +75,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
               expandedTitleScale: 1.0,
             ),
             bottom: PreferredSize(
-              preferredSize: Size.fromHeight(7.0),
+              preferredSize: const Size.fromHeight(7.0),
               child: Container(),
             ),
             elevation: 2.0,
@@ -92,7 +88,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 10.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 10.0, 0.0, 10.0),
                   child: FlutterFlowPlacePicker(
                     iOSGoogleMapsApiKey:
                         'AIzaSyDhvP8FVQl7fryfLHLLdx3gdg3CBKmYI_U',
@@ -119,7 +115,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                                 letterSpacing: 0.0,
                               ),
                       elevation: 2.0,
-                      borderSide: BorderSide(
+                      borderSide: const BorderSide(
                         color: Colors.transparent,
                         width: 1.0,
                       ),
@@ -128,10 +124,10 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                   ),
                 ),
                 Align(
-                  alignment: AlignmentDirectional(-1.0, -1.0),
+                  alignment: const AlignmentDirectional(-1.0, -1.0),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 0.0, 0.0),
                     child: Text(
                       'Nearest stations',
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
