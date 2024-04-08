@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "178565084985",
+    "project_id": "cash4trash-9b593",
+    "storage_bucket": "cash4trash-9b593.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178565084985:android:674fb8f2b8a662a4b99ae8",
+        "android_client_info": {
+          "package_name": "com.staticstartup.cashfortrash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "178565084985-8q6hjqluskhpuniq5oc7kt82csl39gml.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.staticstartup.cashfortrash",
+            "certificate_hash": "c99f2457f380bc51ec5e1bb547aa64f42961f05b"
+          }
+        },
+        {
+          "client_id": "178565084985-t9atg8892fc294otm4u62on4bf030sni.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.staticstartup.cashfortrash",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "178565084985-prvvjeb10o1i77i616utl61l4v0hm2tu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDt2MtQwxJv76-fgUCo5lAGzZICZEt341c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "178565084985-prvvjeb10o1i77i616utl61l4v0hm2tu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "178565084985-91m48j2o66adrlqcc9ocnjitj5r0ddq3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.staticstartup.cashfortrash"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
