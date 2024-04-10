@@ -24,6 +24,10 @@ class RecyclingPageModel extends FlutterFlowModel<RecyclingPageWidget> {
   FocusNode? metalWeightFocusNode;
   TextEditingController? metalWeightController;
   String? Function(BuildContext, String?)? metalWeightControllerValidator;
+  bool isDataUploading = false;
+  FFUploadedFile uploadedLocalFile =
+      FFUploadedFile(bytes: Uint8List.fromList([]));
+  String uploadedFileUrl = '';
 
   @override
   void initState(BuildContext context) {}

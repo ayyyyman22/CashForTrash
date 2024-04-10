@@ -50,15 +50,20 @@ class RecycleHistoryRecord extends FirestoreRecord {
   String get recycleID => _recycleID ?? '';
   bool hasRecycleID() => _recycleID != null;
 
-  // "status" field.
-  bool? _status;
-  bool get status => _status ?? false;
-  bool hasStatus() => _status != null;
-
   // "userID" field.
   String? _userID;
   String get userID => _userID ?? '';
   bool hasUserID() => _userID != null;
+
+  // "Image" field.
+  String? _image;
+  String get image => _image ?? '';
+  bool hasImage() => _image != null;
+
+  // "status" field.
+  String? _status;
+  String get status => _status ?? '';
+  bool hasStatus() => _status != null;
 
   void _initializeFields() {
     _clothing = castToType<double>(snapshotData['clothing']);
@@ -68,8 +73,9 @@ class RecycleHistoryRecord extends FirestoreRecord {
     _plastic = castToType<double>(snapshotData['plastic']);
     _points = castToType<double>(snapshotData['points']);
     _recycleID = snapshotData['recycleID'] as String?;
-    _status = snapshotData['status'] as bool?;
     _userID = snapshotData['userID'] as String?;
+    _image = snapshotData['Image'] as String?;
+    _status = snapshotData['status'] as String?;
   }
 
   static CollectionReference get collection =>
@@ -114,8 +120,9 @@ Map<String, dynamic> createRecycleHistoryRecordData({
   double? plastic,
   double? points,
   String? recycleID,
-  bool? status,
   String? userID,
+  String? image,
+  String? status,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -126,8 +133,9 @@ Map<String, dynamic> createRecycleHistoryRecordData({
       'plastic': plastic,
       'points': points,
       'recycleID': recycleID,
-      'status': status,
       'userID': userID,
+      'Image': image,
+      'status': status,
     }.withoutNulls,
   );
 
@@ -147,8 +155,9 @@ class RecycleHistoryRecordDocumentEquality
         e1?.plastic == e2?.plastic &&
         e1?.points == e2?.points &&
         e1?.recycleID == e2?.recycleID &&
-        e1?.status == e2?.status &&
-        e1?.userID == e2?.userID;
+        e1?.userID == e2?.userID &&
+        e1?.image == e2?.image &&
+        e1?.status == e2?.status;
   }
 
   @override
@@ -160,8 +169,9 @@ class RecycleHistoryRecordDocumentEquality
         e?.plastic,
         e?.points,
         e?.recycleID,
-        e?.status,
-        e?.userID
+        e?.userID,
+        e?.image,
+        e?.status
       ]);
 
   @override

@@ -3,13 +3,13 @@ import 'rewards_widget.dart' show RewardsWidget;
 import 'package:flutter/material.dart';
 
 class RewardsModel extends FlutterFlowModel<RewardsWidget> {
+  ///  Local state fields for this page.
+
+  double? vocherpoint;
+
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();
-  // State field(s) for TabBar widget.
-  TabController? tabBarController;
-  int get tabBarCurrentIndex =>
-      tabBarController != null ? tabBarController!.index : 0;
 
   @override
   void initState(BuildContext context) {}
@@ -17,6 +17,10 @@ class RewardsModel extends FlutterFlowModel<RewardsWidget> {
   @override
   void dispose() {
     unfocusNode.dispose();
-    tabBarController?.dispose();
   }
+
+  /// Action blocks.
+  Future redeem(BuildContext context) async {}
+
+  Future redeemm(BuildContext context) async {}
 }

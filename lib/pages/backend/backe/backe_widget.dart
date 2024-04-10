@@ -21,6 +21,7 @@ class _BackeWidgetState extends State<BackeWidget> {
     super.initState();
     _model = createModel(context, () => BackeModel());
 
+    logFirebaseEvent('screen_view', parameters: {'screen_name': 'backe'});
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 

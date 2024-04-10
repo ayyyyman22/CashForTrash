@@ -6,11 +6,12 @@ export 'api_manager.dart' show ApiCallResponse;
 
 const _kPrivateApiFunctionName = 'ffPrivateApiCall';
 
-class LocationCall {
+class LocationsCall {
   static Future<ApiCallResponse> call() async {
     return ApiManager.instance.makeApiCall(
-      callName: 'Location',
-      apiUrl: 'gs://cash4trash-9b593.appspot.com/CashForTrashGEOJSON.geojson',
+      callName: 'locations',
+      apiUrl:
+          'https://console.firebase.google.com/project/cash4trash-9b593/database/cash4trash-9b593-default-rtdb/data',
       callType: ApiCallType.GET,
       headers: {},
       params: {},

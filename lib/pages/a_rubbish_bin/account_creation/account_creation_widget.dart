@@ -32,6 +32,8 @@ class _AccountCreationWidgetState extends State<AccountCreationWidget> {
     super.initState();
     _model = createModel(context, () => AccountCreationModel());
 
+    logFirebaseEvent('screen_view',
+        parameters: {'screen_name': 'AccountCreation'});
     if (!isWeb) {
       _keyboardVisibilitySubscription =
           KeyboardVisibilityController().onChange.listen((bool visible) {

@@ -11,6 +11,10 @@ import 'schema/trash_items_record.dart';
 import 'schema/recycle_history_record.dart';
 import 'schema/vocher_record.dart';
 import 'schema/user_vocher_storage_record.dart';
+import 'schema/point_balance_data_record.dart';
+import 'schema/redeem_history_record.dart';
+import 'schema/user_recycle_record.dart';
+import 'schema/staffaccounts_record.dart';
 
 export 'dart:async' show StreamSubscription;
 export 'package:cloud_firestore/cloud_firestore.dart';
@@ -24,6 +28,10 @@ export 'schema/trash_items_record.dart';
 export 'schema/recycle_history_record.dart';
 export 'schema/vocher_record.dart';
 export 'schema/user_vocher_storage_record.dart';
+export 'schema/point_balance_data_record.dart';
+export 'schema/redeem_history_record.dart';
+export 'schema/user_recycle_record.dart';
+export 'schema/staffaccounts_record.dart';
 
 /// Functions to query UsersRecords (as a Stream and as a Future).
 Future<int> queryUsersRecordCount({
@@ -242,6 +250,154 @@ Future<List<UserVocherStorageRecord>> queryUserVocherStorageRecordOnce({
     queryCollectionOnce(
       UserVocherStorageRecord.collection,
       UserVocherStorageRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query PointBalanceDataRecords (as a Stream and as a Future).
+Future<int> queryPointBalanceDataRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      PointBalanceDataRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<PointBalanceDataRecord>> queryPointBalanceDataRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      PointBalanceDataRecord.collection,
+      PointBalanceDataRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<PointBalanceDataRecord>> queryPointBalanceDataRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      PointBalanceDataRecord.collection,
+      PointBalanceDataRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query RedeemHistoryRecords (as a Stream and as a Future).
+Future<int> queryRedeemHistoryRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      RedeemHistoryRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<RedeemHistoryRecord>> queryRedeemHistoryRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      RedeemHistoryRecord.collection,
+      RedeemHistoryRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<RedeemHistoryRecord>> queryRedeemHistoryRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      RedeemHistoryRecord.collection,
+      RedeemHistoryRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query UserRecycleRecords (as a Stream and as a Future).
+Future<int> queryUserRecycleRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      UserRecycleRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<UserRecycleRecord>> queryUserRecycleRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      UserRecycleRecord.collection,
+      UserRecycleRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<UserRecycleRecord>> queryUserRecycleRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      UserRecycleRecord.collection,
+      UserRecycleRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query StaffaccountsRecords (as a Stream and as a Future).
+Future<int> queryStaffaccountsRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      StaffaccountsRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<StaffaccountsRecord>> queryStaffaccountsRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      StaffaccountsRecord.collection,
+      StaffaccountsRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<StaffaccountsRecord>> queryStaffaccountsRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      StaffaccountsRecord.collection,
+      StaffaccountsRecord.fromSnapshot,
       queryBuilder: queryBuilder,
       limit: limit,
       singleRecord: singleRecord,
