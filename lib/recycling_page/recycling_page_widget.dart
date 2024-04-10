@@ -1,7 +1,7 @@
 import '/auth/firebase_auth/auth_util.dart';
-import '/backend/api_requests/api_calls.dart';
 import '/backend/backend.dart';
 import '/backend/firebase_storage/storage.dart';
+import '/flutter_flow/flutter_flow_expanded_image_view.dart';
 import '/flutter_flow/flutter_flow_place_picker.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -98,59 +98,63 @@ class _RecyclingPageWidgetState extends State<RecyclingPageWidget> {
                         ),
                   ),
                 ),
-                FutureBuilder<ApiCallResponse>(
-                  future: LocationsCall.call(),
-                  builder: (context, snapshot) {
-                    // Customize what your widget looks like when it's loading.
-                    if (!snapshot.hasData) {
-                      return Center(
-                        child: SizedBox(
-                          width: 50.0,
-                          height: 50.0,
-                          child: CircularProgressIndicator(
-                            valueColor: AlwaysStoppedAnimation<Color>(
-                              FlutterFlowTheme.of(context).primary,
-                            ),
-                          ),
-                        ),
-                      );
-                    }
-                    final placePickerLocationsResponse = snapshot.data!;
-                    return FlutterFlowPlacePicker(
-                      iOSGoogleMapsApiKey:
-                          'AIzaSyDhvP8FVQl7fryfLHLLdx3gdg3CBKmYI_U',
-                      androidGoogleMapsApiKey:
-                          'AIzaSyDt2MtQwxJv76-fgUCo5lAGzZICZEt341c',
-                      webGoogleMapsApiKey:
-                          'AIzaSyAHA-EgPFrxK4uNfpQftKLFcNKOHYNOO9E',
-                      onSelect: (place) async {
-                        setState(() => _model.placePickerValue = place);
-                      },
-                      defaultText: 'Select Location',
-                      icon: Icon(
-                        Icons.place,
-                        color: FlutterFlowTheme.of(context).info,
-                        size: 16.0,
-                      ),
-                      buttonOptions: FFButtonOptions(
-                        width: 200.0,
-                        height: 40.0,
-                        color: FlutterFlowTheme.of(context).primary,
-                        textStyle:
-                            FlutterFlowTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Inter',
-                                  color: FlutterFlowTheme.of(context).info,
-                                  letterSpacing: 0.0,
-                                ),
-                        elevation: 2.0,
-                        borderSide: const BorderSide(
-                          color: Colors.transparent,
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                    );
+                FlutterFlowPlacePicker(
+                  iOSGoogleMapsApiKey:
+                      'AIzaSyDhvP8FVQl7fryfLHLLdx3gdg3CBKmYI_U',
+                  androidGoogleMapsApiKey:
+                      'AIzaSyDt2MtQwxJv76-fgUCo5lAGzZICZEt341c',
+                  webGoogleMapsApiKey:
+                      'AIzaSyAHA-EgPFrxK4uNfpQftKLFcNKOHYNOO9E',
+                  onSelect: (place) async {
+                    setState(() => _model.placePickerValue = place);
                   },
+                  defaultText: 'Select Location',
+                  icon: Icon(
+                    Icons.place,
+                    color: FlutterFlowTheme.of(context).info,
+                    size: 16.0,
+                  ),
+                  buttonOptions: FFButtonOptions(
+                    width: 200.0,
+                    height: 40.0,
+                    color: FlutterFlowTheme.of(context).primary,
+                    textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                          fontFamily: 'Inter',
+                          color: FlutterFlowTheme.of(context).info,
+                          letterSpacing: 0.0,
+                        ),
+                    elevation: 2.0,
+                    borderSide: const BorderSide(
+                      color: Colors.transparent,
+                      width: 1.0,
+                    ),
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
+                ),
+                FFButtonWidget(
+                  onPressed: () async {
+                    context.pushNamed('RecycleStationPage');
+                  },
+                  text: 'Button',
+                  options: FFButtonOptions(
+                    height: 40.0,
+                    padding:
+                        const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                    iconPadding:
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    color: FlutterFlowTheme.of(context).primary,
+                    textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                          fontFamily: 'Inter',
+                          color: Colors.white,
+                          letterSpacing: 0.0,
+                        ),
+                    elevation: 3.0,
+                    borderSide: const BorderSide(
+                      color: Colors.transparent,
+                      width: 1.0,
+                    ),
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
@@ -525,8 +529,8 @@ class _RecyclingPageWidgetState extends State<RecyclingPageWidget> {
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 0.0, 0.0),
                           child: FFButtonWidget(
-                            onPressed: () {
-                              print('Button pressed ...');
+                            onPressed: () async {
+                              context.pushNamed('MetalPage');
                             },
                             text: 'Metal',
                             options: FFButtonOptions(
@@ -623,15 +627,44 @@ class _RecyclingPageWidgetState extends State<RecyclingPageWidget> {
                   ],
                 ),
                 if (_model.uploadedFileUrl != '')
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(8.0),
-                    child: Image.network(
-                      _model.uploadedFileUrl,
-                      width: 240.0,
-                      height: 160.0,
-                      fit: BoxFit.cover,
-                      cacheWidth: 240,
-                      cacheHeight: 160,
+                  InkWell(
+                    splashColor: Colors.transparent,
+                    focusColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
+                    onTap: () async {
+                      await Navigator.push(
+                        context,
+                        PageTransition(
+                          type: PageTransitionType.fade,
+                          child: FlutterFlowExpandedImageView(
+                            image: Image.network(
+                              _model.uploadedFileUrl,
+                              fit: BoxFit.contain,
+                              cacheWidth: 240,
+                              cacheHeight: 160,
+                            ),
+                            allowRotation: false,
+                            tag: _model.uploadedFileUrl,
+                            useHeroAnimation: true,
+                          ),
+                        ),
+                      );
+                    },
+                    child: Hero(
+                      tag: _model.uploadedFileUrl,
+                      transitionOnUserGestures: true,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(8.0),
+                        child: Image.network(
+                          _model.uploadedFileUrl,
+                          width: 240.0,
+                          height: 160.0,
+                          fit: BoxFit.cover,
+                          cacheWidth: 240,
+                          cacheHeight: 160,
+                        ),
+                      ),
                     ),
                   ),
                 Padding(

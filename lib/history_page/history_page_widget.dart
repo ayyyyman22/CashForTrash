@@ -1,5 +1,6 @@
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
+import '/flutter_flow/flutter_flow_expanded_image_view.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
@@ -198,6 +199,7 @@ class _HistoryPageWidgetState extends State<HistoryPageWidget>
                                                         .bodyLarge
                                                         .override(
                                                           fontFamily: 'Inter',
+                                                          fontSize: 14.0,
                                                           letterSpacing: 0.0,
                                                         ),
                                               ),
@@ -238,6 +240,7 @@ class _HistoryPageWidgetState extends State<HistoryPageWidget>
                                                               .override(
                                                                 fontFamily:
                                                                     'Inter',
+                                                                fontSize: 12.0,
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -288,6 +291,7 @@ class _HistoryPageWidgetState extends State<HistoryPageWidget>
                                                               .override(
                                                                 fontFamily:
                                                                     'Inter',
+                                                                fontSize: 12.0,
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -337,6 +341,7 @@ class _HistoryPageWidgetState extends State<HistoryPageWidget>
                                                               .override(
                                                                 fontFamily:
                                                                     'Inter',
+                                                                fontSize: 12.0,
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -386,6 +391,7 @@ class _HistoryPageWidgetState extends State<HistoryPageWidget>
                                                               .override(
                                                                 fontFamily:
                                                                     'Inter',
+                                                                fontSize: 12.0,
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -435,6 +441,7 @@ class _HistoryPageWidgetState extends State<HistoryPageWidget>
                                                               .override(
                                                                 fontFamily:
                                                                     'Inter',
+                                                                fontSize: 12.0,
                                                                 letterSpacing:
                                                                     0.0,
                                                               ),
@@ -443,16 +450,56 @@ class _HistoryPageWidgetState extends State<HistoryPageWidget>
                                                     ],
                                                   ),
                                                 ),
-                                                ClipRRect(
-                                                  borderRadius:
-                                                      BorderRadius.circular(
-                                                          8.0),
-                                                  child: Image.network(
-                                                    listViewRecycleHistoryRecord
-                                                        .image,
-                                                    width: 80.0,
-                                                    height: 80.0,
-                                                    fit: BoxFit.cover,
+                                                InkWell(
+                                                  splashColor:
+                                                      Colors.transparent,
+                                                  focusColor:
+                                                      Colors.transparent,
+                                                  hoverColor:
+                                                      Colors.transparent,
+                                                  highlightColor:
+                                                      Colors.transparent,
+                                                  onTap: () async {
+                                                    await Navigator.push(
+                                                      context,
+                                                      PageTransition(
+                                                        type: PageTransitionType
+                                                            .fade,
+                                                        child:
+                                                            FlutterFlowExpandedImageView(
+                                                          image: Image.network(
+                                                            listViewRecycleHistoryRecord
+                                                                .image,
+                                                            fit: BoxFit.contain,
+                                                          ),
+                                                          allowRotation: false,
+                                                          tag:
+                                                              listViewRecycleHistoryRecord
+                                                                  .image,
+                                                          useHeroAnimation:
+                                                              true,
+                                                        ),
+                                                      ),
+                                                    );
+                                                  },
+                                                  child: Hero(
+                                                    tag:
+                                                        listViewRecycleHistoryRecord
+                                                            .image,
+                                                    transitionOnUserGestures:
+                                                        true,
+                                                    child: ClipRRect(
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              8.0),
+                                                      child: Image.network(
+                                                        listViewRecycleHistoryRecord
+                                                            .image,
+                                                        width: 60.0,
+                                                        height: 60.0,
+                                                        fit: BoxFit.cover,
+                                                      ),
+                                                    ),
                                                   ),
                                                 ),
                                               ],
@@ -465,54 +512,65 @@ class _HistoryPageWidgetState extends State<HistoryPageWidget>
                                                   5.0, 0.0, 0.0, 0.0),
                                           child: Column(
                                             mainAxisSize: MainAxisSize.max,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.center,
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.end,
                                             children: [
-                                              RichText(
-                                                textScaler:
-                                                    MediaQuery.of(context)
-                                                        .textScaler,
-                                                text: TextSpan(
-                                                  children: [
-                                                    TextSpan(
-                                                      text: valueOrDefault<
-                                                          String>(
-                                                        listViewRecycleHistoryRecord
-                                                            .points
-                                                            .toString(),
-                                                        '0',
+                                              Padding(
+                                                padding: const EdgeInsetsDirectional
+                                                    .fromSTEB(
+                                                        0.0, 0.0, 5.0, 0.0),
+                                                child: RichText(
+                                                  textScaler:
+                                                      MediaQuery.of(context)
+                                                          .textScaler,
+                                                  text: TextSpan(
+                                                    children: [
+                                                      TextSpan(
+                                                        text: valueOrDefault<
+                                                            String>(
+                                                          listViewRecycleHistoryRecord
+                                                              .points
+                                                              .toString(),
+                                                          '0',
+                                                        ),
+                                                        style:
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .bodyMedium
+                                                                .override(
+                                                                  fontFamily:
+                                                                      'Inter',
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .primary,
+                                                                  letterSpacing:
+                                                                      0.0,
+                                                                  fontWeight:
+                                                                      FontWeight
+                                                                          .bold,
+                                                                ),
                                                       ),
-                                                      style: FlutterFlowTheme
-                                                              .of(context)
-                                                          .bodyMedium
-                                                          .override(
-                                                            fontFamily: 'Inter',
-                                                            color: FlutterFlowTheme
-                                                                    .of(context)
-                                                                .primary,
-                                                            letterSpacing: 0.0,
-                                                            fontWeight:
-                                                                FontWeight.bold,
-                                                          ),
-                                                    ),
-                                                    const TextSpan(
-                                                      text: 'Points',
-                                                      style: TextStyle(),
-                                                    )
-                                                  ],
-                                                  style: FlutterFlowTheme.of(
-                                                          context)
-                                                      .bodyMedium
-                                                      .override(
-                                                        fontFamily: 'Inter',
-                                                        letterSpacing: 0.0,
-                                                      ),
+                                                      const TextSpan(
+                                                        text: 'Points',
+                                                        style: TextStyle(),
+                                                      )
+                                                    ],
+                                                    style: FlutterFlowTheme.of(
+                                                            context)
+                                                        .bodyMedium
+                                                        .override(
+                                                          fontFamily: 'Inter',
+                                                          letterSpacing: 0.0,
+                                                        ),
+                                                  ),
                                                 ),
                                               ),
                                               Padding(
                                                 padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
-                                                        0.0, 12.0, 0.0, 0.0),
+                                                        0.0, 12.0, 5.0, 0.0),
                                                 child: Container(
                                                   height: 32.0,
                                                   decoration: BoxDecoration(

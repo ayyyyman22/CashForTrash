@@ -163,9 +163,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const OTPPageWidget(),
         ),
         FFRoute(
-          name: 'example',
-          path: '/example',
-          builder: (context, params) => const ExampleWidget(),
+          name: 'RecycleStationPage',
+          path: '/recycleStationPage',
+          builder: (context, params) => const RecycleStationPageWidget(),
         ),
         FFRoute(
           name: 'RecyclingPage',
@@ -173,11 +173,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => params.isEmpty
               ? const NavBarPage(initialPage: 'RecyclingPage')
               : const RecyclingPageWidget(),
-        ),
-        FFRoute(
-          name: 'HomePage2',
-          path: '/homePage2',
-          builder: (context, params) => const HomePage2Widget(),
         ),
         FFRoute(
           name: 'ClothingPage',
@@ -217,24 +212,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const MapsPageWidget(),
         ),
         FFRoute(
-          name: 'MapsPageCopy',
-          path: '/mapsPageCopy',
-          builder: (context, params) => const MapsPageCopyWidget(),
-        ),
-        FFRoute(
           name: 'FAQPage',
           path: '/fAQPage',
           builder: (context, params) => const FAQPageWidget(),
         ),
         FFRoute(
-          name: 'QueryPage',
-          path: '/queryPage',
-          builder: (context, params) => const QueryPageWidget(),
-        ),
-        FFRoute(
-          name: 'map',
-          path: '/ma',
-          builder: (context, params) => const MapWidget(),
+          name: 'ContactPage',
+          path: '/ContactPage',
+          builder: (context, params) => const ContactPageWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

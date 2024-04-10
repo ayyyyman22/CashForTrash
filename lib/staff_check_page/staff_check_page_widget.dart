@@ -232,6 +232,7 @@ class _StaffCheckPageWidgetState extends State<StaffCheckPageWidget>
                                                       .bodyLarge
                                                       .override(
                                                         fontFamily: 'Inter',
+                                                        fontSize: 14.0,
                                                         letterSpacing: 0.0,
                                                       ),
                                                 ),
@@ -311,6 +312,7 @@ class _StaffCheckPageWidgetState extends State<StaffCheckPageWidget>
                                                           .bodyLarge
                                                           .override(
                                                             fontFamily: 'Inter',
+                                                            fontSize: 14.0,
                                                             letterSpacing: 0.0,
                                                           ),
                                                     ),
@@ -355,6 +357,7 @@ class _StaffCheckPageWidgetState extends State<StaffCheckPageWidget>
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Inter',
+                                                        fontSize: 12.0,
                                                         letterSpacing: 0.0,
                                                       ),
                                                 ),
@@ -397,6 +400,7 @@ class _StaffCheckPageWidgetState extends State<StaffCheckPageWidget>
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Inter',
+                                                        fontSize: 12.0,
                                                         letterSpacing: 0.0,
                                                       ),
                                                 ),
@@ -439,6 +443,7 @@ class _StaffCheckPageWidgetState extends State<StaffCheckPageWidget>
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Inter',
+                                                        fontSize: 12.0,
                                                         letterSpacing: 0.0,
                                                       ),
                                                 ),
@@ -481,6 +486,7 @@ class _StaffCheckPageWidgetState extends State<StaffCheckPageWidget>
                                                       .bodyMedium
                                                       .override(
                                                         fontFamily: 'Inter',
+                                                        fontSize: 12.0,
                                                         letterSpacing: 0.0,
                                                       ),
                                                 ),
@@ -501,6 +507,7 @@ class _StaffCheckPageWidgetState extends State<StaffCheckPageWidget>
                                                       .labelMedium
                                                       .override(
                                                         fontFamily: 'Inter',
+                                                        fontSize: 12.0,
                                                         letterSpacing: 0.0,
                                                       ),
                                                 ),
@@ -526,7 +533,7 @@ class _StaffCheckPageWidgetState extends State<StaffCheckPageWidget>
                                             child: Padding(
                                               padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
-                                                      0.0, 60.0, 0.0, 0.0),
+                                                      80.0, 0.0, 0.0, 0.0),
                                               child: StreamBuilder<
                                                   List<UsersRecord>>(
                                                 stream: queryUsersRecord(
@@ -574,10 +581,9 @@ class _StaffCheckPageWidgetState extends State<StaffCheckPageWidget>
                                                           : null;
                                                   return Column(
                                                     mainAxisSize:
-                                                        MainAxisSize.max,
+                                                        MainAxisSize.min,
                                                     mainAxisAlignment:
-                                                        MainAxisAlignment
-                                                            .center,
+                                                        MainAxisAlignment.start,
                                                     crossAxisAlignment:
                                                         CrossAxisAlignment
                                                             .center,

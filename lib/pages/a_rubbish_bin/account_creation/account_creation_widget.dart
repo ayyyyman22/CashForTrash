@@ -655,7 +655,7 @@ class _AccountCreationWidgetState extends State<AccountCreationWidget> {
                                         .checkboxListTileValue = newValue!);
                                   },
                                   title: Text(
-                                    'I would like to receive inspriation emails.',
+                                    'I would like to receive inspiration emails.',
                                     style: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(

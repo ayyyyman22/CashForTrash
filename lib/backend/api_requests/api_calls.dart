@@ -6,12 +6,12 @@ export 'api_manager.dart' show ApiCallResponse;
 
 const _kPrivateApiFunctionName = 'ffPrivateApiCall';
 
-class LocationsCall {
+class RecycleStationsCall {
   static Future<ApiCallResponse> call() async {
     return ApiManager.instance.makeApiCall(
-      callName: 'locations',
+      callName: 'RecycleStations',
       apiUrl:
-          'https://console.firebase.google.com/project/cash4trash-9b593/database/cash4trash-9b593-default-rtdb/data',
+          'https://beta.data.gov.sg/datasets/d_c23ec3724271b9d05436d1f61fe53749/view',
       callType: ApiCallType.GET,
       headers: {},
       params: {},

@@ -405,51 +405,60 @@ class _HomePageWidgetState extends State<HomePageWidget>
                   child: Padding(
                     padding:
                         const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        Container(
-                          width: 116.0,
-                          height: 116.0,
-                          decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
-                            shape: BoxShape.circle,
-                          ),
-                          alignment: const AlignmentDirectional(0.0, 0.0),
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(8.0),
-                            child: Image.asset(
-                              'assets/images/metal-clipart-md.png',
-                              width: 300.0,
-                              height: 200.0,
-                              fit: BoxFit.fitWidth,
+                    child: InkWell(
+                      splashColor: Colors.transparent,
+                      focusColor: Colors.transparent,
+                      hoverColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      onTap: () async {
+                        context.pushNamed('MetalPage');
+                      },
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Container(
+                            width: 116.0,
+                            height: 116.0,
+                            decoration: BoxDecoration(
+                              color: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
+                              shape: BoxShape.circle,
+                            ),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(8.0),
+                              child: Image.asset(
+                                'assets/images/metal-clipart-md.png',
+                                width: 300.0,
+                                height: 200.0,
+                                fit: BoxFit.fitWidth,
+                              ),
+                            ),
+                          ).animateOnPageLoad(
+                              animationsMap['containerOnPageLoadAnimation2']!),
+                          Padding(
+                            padding: const EdgeInsets.all(12.0),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Metal',
+                                  style: FlutterFlowTheme.of(context)
+                                      .labelMedium
+                                      .override(
+                                        fontFamily: 'Inter',
+                                        fontSize: 30.0,
+                                        letterSpacing: 0.0,
+                                      ),
+                                ).animateOnPageLoad(
+                                    animationsMap['textOnPageLoadAnimation1']!),
+                              ],
                             ),
                           ),
-                        ).animateOnPageLoad(
-                            animationsMap['containerOnPageLoadAnimation2']!),
-                        Padding(
-                          padding: const EdgeInsets.all(12.0),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Metal',
-                                style: FlutterFlowTheme.of(context)
-                                    .labelMedium
-                                    .override(
-                                      fontFamily: 'Inter',
-                                      fontSize: 30.0,
-                                      letterSpacing: 0.0,
-                                    ),
-                              ).animateOnPageLoad(
-                                  animationsMap['textOnPageLoadAnimation1']!),
-                            ],
-                          ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 ).animateOnPageLoad(
@@ -480,51 +489,60 @@ class _HomePageWidgetState extends State<HomePageWidget>
                   child: Padding(
                     padding:
                         const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        Container(
-                          width: 117.0,
-                          height: 117.0,
-                          decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
-                            shape: BoxShape.circle,
-                          ),
-                          alignment: const AlignmentDirectional(0.0, 0.0),
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(8.0),
-                            child: Image.asset(
-                              'assets/images/green-jacket-illustration-on-white-background-free-vector.jpg',
-                              width: 300.0,
-                              height: 200.0,
-                              fit: BoxFit.fitWidth,
+                    child: InkWell(
+                      splashColor: Colors.transparent,
+                      focusColor: Colors.transparent,
+                      hoverColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      onTap: () async {
+                        context.pushNamed('ClothingPage');
+                      },
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Container(
+                            width: 117.0,
+                            height: 117.0,
+                            decoration: BoxDecoration(
+                              color: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
+                              shape: BoxShape.circle,
+                            ),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(8.0),
+                              child: Image.asset(
+                                'assets/images/green-jacket-illustration-on-white-background-free-vector.jpg',
+                                width: 300.0,
+                                height: 200.0,
+                                fit: BoxFit.fitWidth,
+                              ),
+                            ),
+                          ).animateOnPageLoad(
+                              animationsMap['containerOnPageLoadAnimation4']!),
+                          Padding(
+                            padding: const EdgeInsets.all(12.0),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Clothing',
+                                  style: FlutterFlowTheme.of(context)
+                                      .labelMedium
+                                      .override(
+                                        fontFamily: 'Inter',
+                                        fontSize: 30.0,
+                                        letterSpacing: 0.0,
+                                      ),
+                                ).animateOnPageLoad(
+                                    animationsMap['textOnPageLoadAnimation2']!),
+                              ],
                             ),
                           ),
-                        ).animateOnPageLoad(
-                            animationsMap['containerOnPageLoadAnimation4']!),
-                        Padding(
-                          padding: const EdgeInsets.all(12.0),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Clothing',
-                                style: FlutterFlowTheme.of(context)
-                                    .labelMedium
-                                    .override(
-                                      fontFamily: 'Inter',
-                                      fontSize: 30.0,
-                                      letterSpacing: 0.0,
-                                    ),
-                              ).animateOnPageLoad(
-                                  animationsMap['textOnPageLoadAnimation2']!),
-                            ],
-                          ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 ).animateOnPageLoad(
@@ -555,51 +573,60 @@ class _HomePageWidgetState extends State<HomePageWidget>
                   child: Padding(
                     padding:
                         const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        Container(
-                          width: 117.0,
-                          height: 117.0,
-                          decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
-                            shape: BoxShape.circle,
-                          ),
-                          alignment: const AlignmentDirectional(0.0, 0.0),
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(8.0),
-                            child: Image.asset(
-                              'assets/images/paper-clip-art-2.png',
-                              width: 300.0,
-                              height: 200.0,
-                              fit: BoxFit.fitWidth,
+                    child: InkWell(
+                      splashColor: Colors.transparent,
+                      focusColor: Colors.transparent,
+                      hoverColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      onTap: () async {
+                        context.pushNamed('PaperPage');
+                      },
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Container(
+                            width: 117.0,
+                            height: 117.0,
+                            decoration: BoxDecoration(
+                              color: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
+                              shape: BoxShape.circle,
+                            ),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(8.0),
+                              child: Image.asset(
+                                'assets/images/paper-clip-art-2.png',
+                                width: 300.0,
+                                height: 200.0,
+                                fit: BoxFit.fitWidth,
+                              ),
+                            ),
+                          ).animateOnPageLoad(
+                              animationsMap['containerOnPageLoadAnimation6']!),
+                          Padding(
+                            padding: const EdgeInsets.all(12.0),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Paper',
+                                  style: FlutterFlowTheme.of(context)
+                                      .labelMedium
+                                      .override(
+                                        fontFamily: 'Inter',
+                                        fontSize: 30.0,
+                                        letterSpacing: 0.0,
+                                      ),
+                                ).animateOnPageLoad(
+                                    animationsMap['textOnPageLoadAnimation3']!),
+                              ],
                             ),
                           ),
-                        ).animateOnPageLoad(
-                            animationsMap['containerOnPageLoadAnimation6']!),
-                        Padding(
-                          padding: const EdgeInsets.all(12.0),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Paper',
-                                style: FlutterFlowTheme.of(context)
-                                    .labelMedium
-                                    .override(
-                                      fontFamily: 'Inter',
-                                      fontSize: 30.0,
-                                      letterSpacing: 0.0,
-                                    ),
-                              ).animateOnPageLoad(
-                                  animationsMap['textOnPageLoadAnimation3']!),
-                            ],
-                          ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 ).animateOnPageLoad(
@@ -630,51 +657,60 @@ class _HomePageWidgetState extends State<HomePageWidget>
                   child: Padding(
                     padding:
                         const EdgeInsetsDirectional.fromSTEB(10.0, 0.0, 10.0, 0.0),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.max,
-                      children: [
-                        Container(
-                          width: 117.0,
-                          height: 117.0,
-                          decoration: BoxDecoration(
-                            color: FlutterFlowTheme.of(context)
-                                .secondaryBackground,
-                            shape: BoxShape.circle,
-                          ),
-                          alignment: const AlignmentDirectional(0.0, 0.0),
-                          child: ClipRRect(
-                            borderRadius: BorderRadius.circular(8.0),
-                            child: Image.asset(
-                              'assets/images/96174231-plastic-waste.jpg',
-                              width: 300.0,
-                              height: 200.0,
-                              fit: BoxFit.contain,
+                    child: InkWell(
+                      splashColor: Colors.transparent,
+                      focusColor: Colors.transparent,
+                      hoverColor: Colors.transparent,
+                      highlightColor: Colors.transparent,
+                      onTap: () async {
+                        context.pushNamed('PlasticPage');
+                      },
+                      child: Row(
+                        mainAxisSize: MainAxisSize.max,
+                        children: [
+                          Container(
+                            width: 117.0,
+                            height: 117.0,
+                            decoration: BoxDecoration(
+                              color: FlutterFlowTheme.of(context)
+                                  .secondaryBackground,
+                              shape: BoxShape.circle,
+                            ),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(8.0),
+                              child: Image.asset(
+                                'assets/images/96174231-plastic-waste.jpg',
+                                width: 300.0,
+                                height: 200.0,
+                                fit: BoxFit.contain,
+                              ),
+                            ),
+                          ).animateOnPageLoad(
+                              animationsMap['containerOnPageLoadAnimation8']!),
+                          Padding(
+                            padding: const EdgeInsets.all(12.0),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Plastic',
+                                  style: FlutterFlowTheme.of(context)
+                                      .labelMedium
+                                      .override(
+                                        fontFamily: 'Inter',
+                                        fontSize: 30.0,
+                                        letterSpacing: 0.0,
+                                      ),
+                                ).animateOnPageLoad(
+                                    animationsMap['textOnPageLoadAnimation4']!),
+                              ],
                             ),
                           ),
-                        ).animateOnPageLoad(
-                            animationsMap['containerOnPageLoadAnimation8']!),
-                        Padding(
-                          padding: const EdgeInsets.all(12.0),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.max,
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Plastic',
-                                style: FlutterFlowTheme.of(context)
-                                    .labelMedium
-                                    .override(
-                                      fontFamily: 'Inter',
-                                      fontSize: 30.0,
-                                      letterSpacing: 0.0,
-                                    ),
-                              ).animateOnPageLoad(
-                                  animationsMap['textOnPageLoadAnimation4']!),
-                            ],
-                          ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 ).animateOnPageLoad(

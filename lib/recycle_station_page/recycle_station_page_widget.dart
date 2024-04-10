@@ -1,25 +1,27 @@
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
+import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/random_data_util.dart' as random_data;
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'rewards_model.dart';
-export 'rewards_model.dart';
+import 'recycle_station_page_model.dart';
+export 'recycle_station_page_model.dart';
 
-class RewardsWidget extends StatefulWidget {
-  const RewardsWidget({super.key});
+class RecycleStationPageWidget extends StatefulWidget {
+  const RecycleStationPageWidget({super.key});
 
   @override
-  State<RewardsWidget> createState() => _RewardsWidgetState();
+  State<RecycleStationPageWidget> createState() =>
+      _RecycleStationPageWidgetState();
 }
 
-class _RewardsWidgetState extends State<RewardsWidget>
+class _RecycleStationPageWidgetState extends State<RecycleStationPageWidget>
     with TickerProviderStateMixin {
-  late RewardsModel _model;
+  late RecycleStationPageModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -67,9 +69,10 @@ class _RewardsWidgetState extends State<RewardsWidget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => RewardsModel());
+    _model = createModel(context, () => RecycleStationPageModel());
 
-    logFirebaseEvent('screen_view', parameters: {'screen_name': 'Rewards'});
+    logFirebaseEvent('screen_view',
+        parameters: {'screen_name': 'RecycleStationPage'});
     setupAnimations(
       animationsMap.values.where((anim) =>
           anim.trigger == AnimationTrigger.onActionTrigger ||
@@ -97,10 +100,24 @@ class _RewardsWidgetState extends State<RewardsWidget>
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).success,
+          backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
+          leading: FlutterFlowIconButton(
+            borderColor: Colors.transparent,
+            borderRadius: 30.0,
+            borderWidth: 1.0,
+            buttonSize: 60.0,
+            icon: const Icon(
+              Icons.arrow_back_rounded,
+              color: Colors.white,
+              size: 30.0,
+            ),
+            onPressed: () async {
+              context.pop();
+            },
+          ),
           title: Text(
-            'Rewards',
+            'Recycle Stations',
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Readex Pro',
                   color: Colors.white,
@@ -109,7 +126,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                 ),
           ),
           actions: const [],
-          centerTitle: true,
+          centerTitle: false,
           elevation: 2.0,
         ),
         body: SafeArea(
@@ -147,6 +164,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                   : null;
               return ListView(
                 padding: EdgeInsets.zero,
+                shrinkWrap: true,
                 scrollDirection: Axis.vertical,
                 children: [
                   Padding(
