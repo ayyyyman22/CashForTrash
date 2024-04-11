@@ -246,16 +246,19 @@ class _MapsPageWidgetState extends State<MapsPageWidget> {
                       initialLocation: _model.googleMapsCenter ??=
                           currentUserLocationValue!,
                       markers: googleMapREsRecordList
+                          .map((e) => e.crs)
+                          .withoutNulls
+                          .toList()
                           .map(
-                            (googleMapREsRecord) => FlutterFlowMarker(
-                              googleMapREsRecord.reference.path,
-                              googleMapREsRecord.crs!,
+                            (marker) => FlutterFlowMarker(
+                              marker.serialize(),
+                              marker,
                             ),
                           )
                           .toList(),
-                      markerColor: GoogleMarkerColor.violet,
+                      markerColor: GoogleMarkerColor.red,
                       mapType: MapType.normal,
-                      style: GoogleMapStyle.silver,
+                      style: GoogleMapStyle.standard,
                       initialZoom: 14.0,
                       allowInteraction: true,
                       allowZoom: true,

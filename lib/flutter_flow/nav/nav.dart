@@ -96,21 +96,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           ),
         ),
         FFRoute(
-          name: 'ForgotPasswordPage',
-          path: '/forgotPasswordPage',
-          builder: (context, params) => const ForgotPasswordPageWidget(),
-        ),
-        FFRoute(
-          name: 'AccountCreation',
-          path: '/accountCreation',
-          builder: (context, params) => AccountCreationWidget(
-            emailAddressCreate: params.getParam(
-              'emailAddressCreate',
-              ParamType.String,
-            ),
-          ),
-        ),
-        FFRoute(
           name: 'backe',
           path: '/backe',
           builder: (context, params) => const BackeWidget(),
@@ -119,11 +104,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Success',
           path: '/success',
           builder: (context, params) => const SuccessWidget(),
-        ),
-        FFRoute(
-          name: 'RecycleAndPointUsageHistorypage',
-          path: '/Historypage',
-          builder: (context, params) => const RecycleAndPointUsageHistorypageWidget(),
         ),
         FFRoute(
           name: 'Accountpage',
@@ -141,26 +121,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               : const RewardsWidget(),
         ),
         FFRoute(
-          name: 'EditProfilePage',
-          path: '/editProfilePage',
-          builder: (context, params) => const EditProfilePageWidget(),
-        ),
-        FFRoute(
-          name: 'ChangePasswordPage',
-          path: '/changePasswordPage',
-          builder: (context, params) => const ChangePasswordPageWidget(),
-        ),
-        FFRoute(
           name: 'HomePage',
           path: '/homePage',
           builder: (context, params) => params.isEmpty
               ? const NavBarPage(initialPage: 'HomePage')
               : const HomePageWidget(),
-        ),
-        FFRoute(
-          name: 'OTPPage',
-          path: '/oTPPage',
-          builder: (context, params) => const OTPPageWidget(),
         ),
         FFRoute(
           name: 'RecycleStationPage',

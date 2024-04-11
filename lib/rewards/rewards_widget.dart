@@ -365,7 +365,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                                                   title: const Text(
                                                                       'Redemption'),
                                                                   content: const Text(
-                                                                      'Points is enough to redeem the vocher2'),
+                                                                      'Are you sure to redeem this voucher?'),
                                                                   actions: [
                                                                     TextButton(
                                                                       onPressed: () => Navigator.pop(
@@ -442,7 +442,7 @@ class _RewardsWidgetState extends State<RewardsWidget>
                                                           (alertDialogContext) {
                                                         return AlertDialog(
                                                           content: const Text(
-                                                              'Sorry! Your point is not enough for this voucher. Please select another voucher or start recycling now1'),
+                                                              'Sorry! Your point is not enough for this voucher. Please select another voucher or start recycling now!'),
                                                           actions: [
                                                             TextButton(
                                                               onPressed: () =>
