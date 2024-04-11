@@ -32,6 +32,8 @@ class _AccountCreationWidgetState extends State<AccountCreationWidget> {
     super.initState();
     _model = createModel(context, () => AccountCreationModel());
 
+    logFirebaseEvent('screen_view',
+        parameters: {'screen_name': 'AccountCreation'});
     if (!isWeb) {
       _keyboardVisibilitySubscription =
           KeyboardVisibilityController().onChange.listen((bool visible) {
@@ -494,7 +496,7 @@ class _AccountCreationWidgetState extends State<AccountCreationWidget> {
                                 textCapitalization: TextCapitalization.words,
                                 obscureText: false,
                                 decoration: InputDecoration(
-                                  labelText: 'Adress(optional)',
+                                  labelText: 'Address(optional)',
                                   labelStyle: FlutterFlowTheme.of(context)
                                       .labelLarge
                                       .override(
@@ -653,7 +655,7 @@ class _AccountCreationWidgetState extends State<AccountCreationWidget> {
                                         .checkboxListTileValue = newValue!);
                                   },
                                   title: Text(
-                                    'I would like to receive inspriation emails.',
+                                    'I would like to receive inspiration emails.',
                                     style: FlutterFlowTheme.of(context)
                                         .labelMedium
                                         .override(

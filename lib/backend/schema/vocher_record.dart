@@ -15,11 +15,6 @@ class VocherRecord extends FirestoreRecord {
     _initializeFields();
   }
 
-  // "Vocher_id" field.
-  int? _vocherId;
-  int get vocherId => _vocherId ?? 0;
-  bool hasVocherId() => _vocherId != null;
-
   // "Value" field.
   double? _value;
   double get value => _value ?? 0.0;
@@ -30,10 +25,21 @@ class VocherRecord extends FirestoreRecord {
   double get pointRequired => _pointRequired ?? 0.0;
   bool hasPointRequired() => _pointRequired != null;
 
+  // "VocherName" field.
+  String? _vocherName;
+  String get vocherName => _vocherName ?? '';
+  bool hasVocherName() => _vocherName != null;
+
+  // "Vocher_id" field.
+  int? _vocherId;
+  int get vocherId => _vocherId ?? 0;
+  bool hasVocherId() => _vocherId != null;
+
   void _initializeFields() {
-    _vocherId = castToType<int>(snapshotData['Vocher_id']);
     _value = castToType<double>(snapshotData['Value']);
     _pointRequired = castToType<double>(snapshotData['Point_required']);
+    _vocherName = snapshotData['VocherName'] as String?;
+    _vocherId = castToType<int>(snapshotData['Vocher_id']);
   }
 
   static CollectionReference get collection =>
@@ -70,15 +76,17 @@ class VocherRecord extends FirestoreRecord {
 }
 
 Map<String, dynamic> createVocherRecordData({
-  int? vocherId,
   double? value,
   double? pointRequired,
+  String? vocherName,
+  int? vocherId,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
-      'Vocher_id': vocherId,
       'Value': value,
       'Point_required': pointRequired,
+      'VocherName': vocherName,
+      'Vocher_id': vocherId,
     }.withoutNulls,
   );
 
@@ -90,14 +98,15 @@ class VocherRecordDocumentEquality implements Equality<VocherRecord> {
 
   @override
   bool equals(VocherRecord? e1, VocherRecord? e2) {
-    return e1?.vocherId == e2?.vocherId &&
-        e1?.value == e2?.value &&
-        e1?.pointRequired == e2?.pointRequired;
+    return e1?.value == e2?.value &&
+        e1?.pointRequired == e2?.pointRequired &&
+        e1?.vocherName == e2?.vocherName &&
+        e1?.vocherId == e2?.vocherId;
   }
 
   @override
-  int hash(VocherRecord? e) =>
-      const ListEquality().hash([e?.vocherId, e?.value, e?.pointRequired]);
+  int hash(VocherRecord? e) => const ListEquality()
+      .hash([e?.value, e?.pointRequired, e?.vocherName, e?.vocherId]);
 
   @override
   bool isValidKey(Object? o) => o is VocherRecord;

@@ -24,3 +24,13 @@ double? pointsCalculate(
       (paper ?? 0.0) * 10 +
       (metal ?? 0.0) * 20;
 }
+
+double? updatebalance(
+  double? pointBalance,
+  double? pointforVocher,
+) {
+  if (pointBalance != null && pointforVocher != null) {
+    double newBalance = pointBalance - pointforVocher;
+    return newBalance;
+  }
+}

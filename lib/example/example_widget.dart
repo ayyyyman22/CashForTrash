@@ -21,6 +21,7 @@ class _ExampleWidgetState extends State<ExampleWidget> {
     super.initState();
     _model = createModel(context, () => ExampleModel());
 
+    logFirebaseEvent('screen_view', parameters: {'screen_name': 'example'});
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 

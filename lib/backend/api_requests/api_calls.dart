@@ -6,11 +6,30 @@ export 'api_manager.dart' show ApiCallResponse;
 
 const _kPrivateApiFunctionName = 'ffPrivateApiCall';
 
-class LocationCall {
+class RecycleStationsCall {
   static Future<ApiCallResponse> call() async {
     return ApiManager.instance.makeApiCall(
-      callName: 'Location',
-      apiUrl: 'gs://cash4trash-9b593.appspot.com/CashForTrashGEOJSON.geojson',
+      callName: 'RecycleStations',
+      apiUrl:
+          'https://data.gov.sg/api/action/datastore_search?resource_id=d_51995b625307f3953f7ba344722acd79',
+      callType: ApiCallType.GET,
+      headers: {},
+      params: {},
+      returnBody: true,
+      encodeBodyUtf8: false,
+      decodeUtf8: false,
+      cache: false,
+      alwaysAllowBody: false,
+    );
+  }
+}
+
+class StationsCall {
+  static Future<ApiCallResponse> call() async {
+    return ApiManager.instance.makeApiCall(
+      callName: 'Stations',
+      apiUrl:
+          'https://console.firebase.google.com/project/cash4trash-9b593/database/cash4trash-9b593-default-rtdb/data/~2F?hl=zh-cn',
       callType: ApiCallType.GET,
       headers: {},
       params: {},

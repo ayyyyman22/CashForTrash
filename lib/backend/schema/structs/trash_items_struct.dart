@@ -35,7 +35,7 @@ class TrashItemsStruct extends FFFirebaseStruct {
 
   // "pointsPerItem" field.
   int? _pointsPerItem;
-  int get pointsPerItem => _pointsPerItem ?? 10;
+  int get pointsPerItem => _pointsPerItem ?? 0;
   set pointsPerItem(int? val) => _pointsPerItem = val;
   void incrementPointsPerItem(int amount) =>
       _pointsPerItem = pointsPerItem + amount;

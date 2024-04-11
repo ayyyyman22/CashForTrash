@@ -86,7 +86,14 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'LoginPage',
           path: '/loginPage',
-          builder: (context, params) => const LoginPageWidget(),
+          builder: (context, params) => LoginPageWidget(
+            staffemail: params.getParam(
+              'staffemail',
+              ParamType.DocumentReference,
+              false,
+              ['Staffaccounts'],
+            ),
+          ),
         ),
         FFRoute(
           name: 'ForgotPasswordPage',
@@ -116,9 +123,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'RecycleAndPointUsageHistorypage',
           path: '/Historypage',
-          builder: (context, params) => params.isEmpty
-              ? const NavBarPage(initialPage: 'RecycleAndPointUsageHistorypage')
-              : const RecycleAndPointUsageHistorypageWidget(),
+          builder: (context, params) => const RecycleAndPointUsageHistorypageWidget(),
         ),
         FFRoute(
           name: 'Accountpage',
@@ -130,6 +135,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'Rewards',
           path: '/rewardsPage',
+          requireAuth: true,
           builder: (context, params) => params.isEmpty
               ? const NavBarPage(initialPage: 'Rewards')
               : const RewardsWidget(),
@@ -138,13 +144,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'EditProfilePage',
           path: '/editProfilePage',
           builder: (context, params) => const EditProfilePageWidget(),
-        ),
-        FFRoute(
-          name: 'RecycleAndPointUsageHistorypageCopy',
-          path: '/recycleAndPointUsageHistorypagecopy',
-          builder: (context, params) => params.isEmpty
-              ? const NavBarPage(initialPage: 'RecycleAndPointUsageHistorypageCopy')
-              : const RecycleAndPointUsageHistorypageCopyWidget(),
         ),
         FFRoute(
           name: 'ChangePasswordPage',
@@ -164,9 +163,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => const OTPPageWidget(),
         ),
         FFRoute(
-          name: 'example',
-          path: '/example',
-          builder: (context, params) => const ExampleWidget(),
+          name: 'RecycleStationPage',
+          path: '/recycleStationPage',
+          builder: (context, params) => const RecycleStationPageWidget(),
         ),
         FFRoute(
           name: 'RecyclingPage',
@@ -176,9 +175,56 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               : const RecyclingPageWidget(),
         ),
         FFRoute(
-          name: 'HomePage2',
-          path: '/homePage2',
-          builder: (context, params) => const HomePage2Widget(),
+          name: 'ClothingPage',
+          path: '/clothingPage',
+          builder: (context, params) => const ClothingPageWidget(),
+        ),
+        FFRoute(
+          name: 'StaffCheckPage',
+          path: '/RPHistorypage',
+          builder: (context, params) => const StaffCheckPageWidget(),
+        ),
+        FFRoute(
+          name: 'PlasticPage',
+          path: '/PlasticPage',
+          builder: (context, params) => const PlasticPageWidget(),
+        ),
+        FFRoute(
+          name: 'PaperPage',
+          path: '/PaperPage',
+          builder: (context, params) => const PaperPageWidget(),
+        ),
+        FFRoute(
+          name: 'MetalPage',
+          path: '/MetalPage',
+          builder: (context, params) => const MetalPageWidget(),
+        ),
+        FFRoute(
+          name: 'HistoryPage',
+          path: '/RPHistoryPage',
+          builder: (context, params) => params.isEmpty
+              ? const NavBarPage(initialPage: 'HistoryPage')
+              : const HistoryPageWidget(),
+        ),
+        FFRoute(
+          name: 'MapsPage',
+          path: '/mapsPage',
+          builder: (context, params) => const MapsPageWidget(),
+        ),
+        FFRoute(
+          name: 'FAQPage',
+          path: '/fAQPage',
+          builder: (context, params) => const FAQPageWidget(),
+        ),
+        FFRoute(
+          name: 'ContactPage',
+          path: '/ContactPage',
+          builder: (context, params) => const ContactPageWidget(),
+        ),
+        FFRoute(
+          name: 'example',
+          path: '/example',
+          builder: (context, params) => const ExampleWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

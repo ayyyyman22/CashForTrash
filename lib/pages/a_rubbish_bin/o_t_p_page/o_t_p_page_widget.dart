@@ -23,6 +23,7 @@ class _OTPPageWidgetState extends State<OTPPageWidget> {
     super.initState();
     _model = createModel(context, () => OTPPageModel());
 
+    logFirebaseEvent('screen_view', parameters: {'screen_name': 'OTPPage'});
     _model.textController ??= TextEditingController();
     _model.textFieldFocusNode ??= FocusNode();
 

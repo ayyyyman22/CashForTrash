@@ -32,5 +32,7 @@
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:178565084985:ios:c18ea744ed81ac82b99ae8</string>
+	<key>DATABASE_URL</key>
+	<string>https://cash4trash-9b593-default-rtdb.asia-southeast1.firebasedatabase.app</string>
 </dict>
 </plist>

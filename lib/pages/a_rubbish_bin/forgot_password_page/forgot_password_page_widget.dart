@@ -25,6 +25,8 @@ class _ForgotPasswordPageWidgetState extends State<ForgotPasswordPageWidget> {
     super.initState();
     _model = createModel(context, () => ForgotPasswordPageModel());
 
+    logFirebaseEvent('screen_view',
+        parameters: {'screen_name': 'ForgotPasswordPage'});
     _model.emailAddressController ??= TextEditingController();
     _model.emailAddressFocusNode ??= FocusNode();
 

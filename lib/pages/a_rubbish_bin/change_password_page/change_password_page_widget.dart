@@ -25,6 +25,8 @@ class _ChangePasswordPageWidgetState extends State<ChangePasswordPageWidget> {
     super.initState();
     _model = createModel(context, () => ChangePasswordPageModel());
 
+    logFirebaseEvent('screen_view',
+        parameters: {'screen_name': 'ChangePasswordPage'});
     _model.textController1 ??= TextEditingController();
     _model.textFieldFocusNode1 ??= FocusNode();
 
@@ -54,7 +56,7 @@ class _ChangePasswordPageWidgetState extends State<ChangePasswordPageWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         appBar: AppBar(
-          backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
+          backgroundColor: FlutterFlowTheme.of(context).primary,
           automaticallyImplyLeading: false,
           leading: FlutterFlowIconButton(
             borderRadius: 30.0,

@@ -23,6 +23,8 @@ class _EditProfilePageWidgetState extends State<EditProfilePageWidget> {
     super.initState();
     _model = createModel(context, () => EditProfilePageModel());
 
+    logFirebaseEvent('screen_view',
+        parameters: {'screen_name': 'EditProfilePage'});
     _model.textController1 ??= TextEditingController();
     _model.textFieldFocusNode1 ??= FocusNode();
 

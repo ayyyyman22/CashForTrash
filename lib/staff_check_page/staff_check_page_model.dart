@@ -1,10 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import 'recycle_and_point_usage_historypage_copy_widget.dart'
-    show RecycleAndPointUsageHistorypageCopyWidget;
+import 'staff_check_page_widget.dart' show StaffCheckPageWidget;
 import 'package:flutter/material.dart';
 
-class RecycleAndPointUsageHistorypageCopyModel
-    extends FlutterFlowModel<RecycleAndPointUsageHistorypageCopyWidget> {
+class StaffCheckPageModel extends FlutterFlowModel<StaffCheckPageWidget> {
   ///  State fields for stateful widgets in this page.
 
   final unfocusNode = FocusNode();

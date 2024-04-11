@@ -1,3 +1,4 @@
+import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 
 import 'package:flutter_localizations/flutter_localizations.dart';
@@ -11,7 +12,6 @@ import 'flutter_flow/flutter_flow_util.dart';
 import 'flutter_flow/internationalization.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:floating_bottom_navigation_bar/floating_bottom_navigation_bar.dart';
-import 'flutter_flow/nav/nav.dart';
 import 'index.dart';
 
 void main() async {
@@ -21,7 +21,13 @@ void main() async {
 
   await FlutterFlowTheme.initialize();
 
-  runApp(const MyApp());
+  final appState = FFAppState(); // Initialize FFAppState
+  await appState.initializePersistedState();
+
+  runApp(ChangeNotifierProvider(
+    create: (context) => appState,
+    child: const MyApp(),
+  ));
 }
 
 class MyApp extends StatefulWidget {
@@ -117,7 +123,7 @@ class NavBarPage extends StatefulWidget {
 
 /// This is the private State class that goes with NavBarPage.
 class _NavBarPageState extends State<NavBarPage> {
-  String _currentPageName = 'Accountpage';
+  String _currentPageName = 'HomePage';
   late Widget? _currentPage;
 
   @override
@@ -130,14 +136,11 @@ class _NavBarPageState extends State<NavBarPage> {
   @override
   Widget build(BuildContext context) {
     final tabs = {
-      'RecycleAndPointUsageHistorypage':
-          const RecycleAndPointUsageHistorypageWidget(),
-      'Accountpage': const AccountpageWidget(),
-      'Rewards': const RewardsWidget(),
-      'RecycleAndPointUsageHistorypageCopy':
-          const RecycleAndPointUsageHistorypageCopyWidget(),
       'HomePage': const HomePageWidget(),
+      'HistoryPage': const HistoryPageWidget(),
       'RecyclingPage': const RecyclingPageWidget(),
+      'Rewards': const RewardsWidget(),
+      'Accountpage': const AccountpageWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
 
@@ -172,16 +175,14 @@ class _NavBarPageState extends State<NavBarPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(
-                  currentIndex == 0
-                      ? FontAwesomeIcons.history
-                      : Icons.history_rounded,
+                  currentIndex == 0 ? Icons.home : Icons.home_outlined,
                   color: currentIndex == 0
                       ? FlutterFlowTheme.of(context).primary
                       : const Color(0x8A000000),
-                  size: currentIndex == 0 ? 24.0 : 24.0,
+                  size: currentIndex == 0 ? 32.0 : 24.0,
                 ),
                 Text(
-                  'History',
+                  'Home',
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                     color: currentIndex == 0
@@ -198,14 +199,16 @@ class _NavBarPageState extends State<NavBarPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(
-                  currentIndex == 1 ? Icons.person : Icons.person_outline,
+                  currentIndex == 1
+                      ? FontAwesomeIcons.history
+                      : Icons.history_rounded,
                   color: currentIndex == 1
                       ? FlutterFlowTheme.of(context).primary
                       : const Color(0x8A000000),
-                  size: currentIndex == 1 ? 32.0 : 24.0,
+                  size: currentIndex == 1 ? 24.0 : 24.0,
                 ),
                 Text(
-                  '__',
+                  'History',
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                     color: currentIndex == 1
@@ -223,15 +226,15 @@ class _NavBarPageState extends State<NavBarPage> {
               children: [
                 Icon(
                   currentIndex == 2
-                      ? FontAwesomeIcons.gift
-                      : Icons.card_giftcard,
+                      ? FontAwesomeIcons.recycle
+                      : Icons.recycling_sharp,
                   color: currentIndex == 2
                       ? FlutterFlowTheme.of(context).primary
                       : const Color(0x8A000000),
-                  size: currentIndex == 2 ? 24.0 : 24.0,
+                  size: currentIndex == 2 ? 32.0 : 32.0,
                 ),
                 Text(
-                  'Rewards',
+                  'Recycle',
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                     color: currentIndex == 2
@@ -248,14 +251,16 @@ class _NavBarPageState extends State<NavBarPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(
-                  Icons.history_sharp,
+                  currentIndex == 3
+                      ? FontAwesomeIcons.gift
+                      : Icons.card_giftcard,
                   color: currentIndex == 3
                       ? FlutterFlowTheme.of(context).primary
                       : const Color(0x8A000000),
-                  size: 30.0,
+                  size: currentIndex == 3 ? 24.0 : 24.0,
                 ),
                 Text(
-                  'Home',
+                  'Rewards',
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                     color: currentIndex == 3
@@ -272,43 +277,17 @@ class _NavBarPageState extends State<NavBarPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(
-                  currentIndex == 4 ? Icons.home : Icons.home_outlined,
+                  currentIndex == 4 ? Icons.person : Icons.person_outline,
                   color: currentIndex == 4
                       ? FlutterFlowTheme.of(context).primary
                       : const Color(0x8A000000),
                   size: currentIndex == 4 ? 32.0 : 24.0,
                 ),
                 Text(
-                  'Home',
+                  'Account',
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
                     color: currentIndex == 4
-                        ? FlutterFlowTheme.of(context).primary
-                        : const Color(0x8A000000),
-                    fontSize: 11.0,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          FloatingNavbarItem(
-            customWidget: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(
-                  currentIndex == 5
-                      ? FontAwesomeIcons.recycle
-                      : Icons.recycling_sharp,
-                  color: currentIndex == 5
-                      ? FlutterFlowTheme.of(context).primary
-                      : const Color(0x8A000000),
-                  size: currentIndex == 5 ? 32.0 : 32.0,
-                ),
-                Text(
-                  'Recycle',
-                  overflow: TextOverflow.ellipsis,
-                  style: TextStyle(
-                    color: currentIndex == 5
                         ? FlutterFlowTheme.of(context).primary
                         : const Color(0x8A000000),
                     fontSize: 11.0,
