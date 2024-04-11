@@ -801,7 +801,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                         child: Padding(
                                           padding:
                                               const EdgeInsetsDirectional.fromSTEB(
-                                                  24.0, 16.0, 24.0, 0.0),
+                                                  24.0, 0.0, 24.0, 0.0),
                                           child: SingleChildScrollView(
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
@@ -841,7 +841,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                                 Padding(
                                                   padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
-                                                          0.0, 16.0, 0.0, 16.0),
+                                                          0.0, 14.0, 0.0, 14.0),
                                                   child: SizedBox(
                                                     width: double.infinity,
                                                     child: TextFormField(
@@ -968,7 +968,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                                 Padding(
                                                   padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
-                                                          0.0, 0.0, 0.0, 16.0),
+                                                          0.0, 0.0, 0.0, 14.0),
                                                   child: SizedBox(
                                                     width: double.infinity,
                                                     child: TextFormField(
@@ -1095,7 +1095,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                                 Padding(
                                                   padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
-                                                          0.0, 0.0, 0.0, 16.0),
+                                                          0.0, 0.0, 0.0, 14.0),
                                                   child: SizedBox(
                                                     width: double.infinity,
                                                     child: TextFormField(
@@ -1244,7 +1244,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
                                                 Padding(
                                                   padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
-                                                          0.0, 0.0, 0.0, 32.0),
+                                                          0.0, 0.0, 0.0, 16.0),
                                                   child: SizedBox(
                                                     width: double.infinity,
                                                     child: TextFormField(
