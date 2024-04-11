@@ -15,6 +15,8 @@ import 'schema/point_balance_data_record.dart';
 import 'schema/redeem_history_record.dart';
 import 'schema/user_recycle_record.dart';
 import 'schema/staffaccounts_record.dart';
+import 'schema/re_stations_record.dart';
+import 'schema/r_es_record.dart';
 
 export 'dart:async' show StreamSubscription;
 export 'package:cloud_firestore/cloud_firestore.dart';
@@ -32,6 +34,8 @@ export 'schema/point_balance_data_record.dart';
 export 'schema/redeem_history_record.dart';
 export 'schema/user_recycle_record.dart';
 export 'schema/staffaccounts_record.dart';
+export 'schema/re_stations_record.dart';
+export 'schema/r_es_record.dart';
 
 /// Functions to query UsersRecords (as a Stream and as a Future).
 Future<int> queryUsersRecordCount({
@@ -398,6 +402,80 @@ Future<List<StaffaccountsRecord>> queryStaffaccountsRecordOnce({
     queryCollectionOnce(
       StaffaccountsRecord.collection,
       StaffaccountsRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query ReStationsRecords (as a Stream and as a Future).
+Future<int> queryReStationsRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      ReStationsRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<ReStationsRecord>> queryReStationsRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      ReStationsRecord.collection,
+      ReStationsRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<ReStationsRecord>> queryReStationsRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      ReStationsRecord.collection,
+      ReStationsRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+/// Functions to query REsRecords (as a Stream and as a Future).
+Future<int> queryREsRecordCount({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+}) =>
+    queryCollectionCount(
+      REsRecord.collection,
+      queryBuilder: queryBuilder,
+      limit: limit,
+    );
+
+Stream<List<REsRecord>> queryREsRecord({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollection(
+      REsRecord.collection,
+      REsRecord.fromSnapshot,
+      queryBuilder: queryBuilder,
+      limit: limit,
+      singleRecord: singleRecord,
+    );
+
+Future<List<REsRecord>> queryREsRecordOnce({
+  Query Function(Query)? queryBuilder,
+  int limit = -1,
+  bool singleRecord = false,
+}) =>
+    queryCollectionOnce(
+      REsRecord.collection,
+      REsRecord.fromSnapshot,
       queryBuilder: queryBuilder,
       limit: limit,
       singleRecord: singleRecord,

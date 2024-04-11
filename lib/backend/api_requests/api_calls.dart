@@ -24,24 +24,6 @@ class RecycleStationsCall {
   }
 }
 
-class StationsCall {
-  static Future<ApiCallResponse> call() async {
-    return ApiManager.instance.makeApiCall(
-      callName: 'Stations',
-      apiUrl:
-          'https://console.firebase.google.com/project/cash4trash-9b593/database/cash4trash-9b593-default-rtdb/data/~2F?hl=zh-cn',
-      callType: ApiCallType.GET,
-      headers: {},
-      params: {},
-      returnBody: true,
-      encodeBodyUtf8: false,
-      decodeUtf8: false,
-      cache: false,
-      alwaysAllowBody: false,
-    );
-  }
-}
-
 class ApiPagingParams {
   int nextPageNumber = 0;
   int numItems = 0;

@@ -523,19 +523,7 @@ class _StaffCheckPageWidgetState extends State<StaffCheckPageWidget>
                                                   fit: BoxFit.cover,
                                                 ),
                                               ),
-                                            ],
-                                          ),
-                                        ),
-                                        Expanded(
-                                          child: Align(
-                                            alignment:
-                                                const AlignmentDirectional(0.0, 0.0),
-                                            child: Padding(
-                                              padding: const EdgeInsetsDirectional
-                                                  .fromSTEB(
-                                                      80.0, 0.0, 0.0, 0.0),
-                                              child: StreamBuilder<
-                                                  List<UsersRecord>>(
+                                              StreamBuilder<List<UsersRecord>>(
                                                 stream: queryUsersRecord(
                                                   queryBuilder: (usersRecord) =>
                                                       usersRecord.where(
@@ -567,26 +555,23 @@ class _StaffCheckPageWidgetState extends State<StaffCheckPageWidget>
                                                     );
                                                   }
                                                   List<UsersRecord>
-                                                      columnUsersRecordList =
+                                                      rowUsersRecordList =
                                                       snapshot.data!;
                                                   // Return an empty Container when the item does not exist.
                                                   if (snapshot.data!.isEmpty) {
                                                     return Container();
                                                   }
-                                                  final columnUsersRecord =
-                                                      columnUsersRecordList
+                                                  final rowUsersRecord =
+                                                      rowUsersRecordList
                                                               .isNotEmpty
-                                                          ? columnUsersRecordList
+                                                          ? rowUsersRecordList
                                                               .first
                                                           : null;
-                                                  return Column(
+                                                  return Row(
                                                     mainAxisSize:
-                                                        MainAxisSize.min,
+                                                        MainAxisSize.max,
                                                     mainAxisAlignment:
                                                         MainAxisAlignment.start,
-                                                    crossAxisAlignment:
-                                                        CrossAxisAlignment
-                                                            .center,
                                                     children: [
                                                       Padding(
                                                         padding:
@@ -605,7 +590,7 @@ class _StaffCheckPageWidgetState extends State<StaffCheckPageWidget>
                                                             'point',
                                                           ),
                                                           textAlign:
-                                                              TextAlign.end,
+                                                              TextAlign.start,
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .headlineSmall
@@ -617,6 +602,58 @@ class _StaffCheckPageWidgetState extends State<StaffCheckPageWidget>
                                                               ),
                                                         ),
                                                       ),
+                                                    ],
+                                                  );
+                                                },
+                                              ),
+                                              StreamBuilder<List<UsersRecord>>(
+                                                stream: queryUsersRecord(
+                                                  queryBuilder: (usersRecord) =>
+                                                      usersRecord.where(
+                                                    'uid',
+                                                    isEqualTo:
+                                                        listViewRecycleHistoryRecord
+                                                            .userID,
+                                                  ),
+                                                  singleRecord: true,
+                                                ),
+                                                builder: (context, snapshot) {
+                                                  // Customize what your widget looks like when it's loading.
+                                                  if (!snapshot.hasData) {
+                                                    return Center(
+                                                      child: SizedBox(
+                                                        width: 50.0,
+                                                        height: 50.0,
+                                                        child:
+                                                            CircularProgressIndicator(
+                                                          valueColor:
+                                                              AlwaysStoppedAnimation<
+                                                                  Color>(
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    );
+                                                  }
+                                                  List<UsersRecord>
+                                                      rowUsersRecordList =
+                                                      snapshot.data!;
+                                                  // Return an empty Container when the item does not exist.
+                                                  if (snapshot.data!.isEmpty) {
+                                                    return Container();
+                                                  }
+                                                  final rowUsersRecord =
+                                                      rowUsersRecordList
+                                                              .isNotEmpty
+                                                          ? rowUsersRecordList
+                                                              .first
+                                                          : null;
+                                                  return Row(
+                                                    mainAxisSize:
+                                                        MainAxisSize.max,
+                                                    children: [
                                                       FFButtonWidget(
                                                         onPressed: () async {
                                                           var confirmDialogResponse =
@@ -662,7 +699,7 @@ class _StaffCheckPageWidgetState extends State<StaffCheckPageWidget>
                                                               }(),
                                                             );
 
-                                                            await columnUsersRecord!
+                                                            await rowUsersRecord!
                                                                 .reference
                                                                 .update({
                                                               ...mapToFirestore(
@@ -724,6 +761,58 @@ class _StaffCheckPageWidgetState extends State<StaffCheckPageWidget>
                                                                       8.0),
                                                         ),
                                                       ),
+                                                    ],
+                                                  );
+                                                },
+                                              ),
+                                              StreamBuilder<List<UsersRecord>>(
+                                                stream: queryUsersRecord(
+                                                  queryBuilder: (usersRecord) =>
+                                                      usersRecord.where(
+                                                    'uid',
+                                                    isEqualTo:
+                                                        listViewRecycleHistoryRecord
+                                                            .userID,
+                                                  ),
+                                                  singleRecord: true,
+                                                ),
+                                                builder: (context, snapshot) {
+                                                  // Customize what your widget looks like when it's loading.
+                                                  if (!snapshot.hasData) {
+                                                    return Center(
+                                                      child: SizedBox(
+                                                        width: 50.0,
+                                                        height: 50.0,
+                                                        child:
+                                                            CircularProgressIndicator(
+                                                          valueColor:
+                                                              AlwaysStoppedAnimation<
+                                                                  Color>(
+                                                            FlutterFlowTheme.of(
+                                                                    context)
+                                                                .primary,
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    );
+                                                  }
+                                                  List<UsersRecord>
+                                                      rowUsersRecordList =
+                                                      snapshot.data!;
+                                                  // Return an empty Container when the item does not exist.
+                                                  if (snapshot.data!.isEmpty) {
+                                                    return Container();
+                                                  }
+                                                  final rowUsersRecord =
+                                                      rowUsersRecordList
+                                                              .isNotEmpty
+                                                          ? rowUsersRecordList
+                                                              .first
+                                                          : null;
+                                                  return Row(
+                                                    mainAxisSize:
+                                                        MainAxisSize.max,
+                                                    children: [
                                                       Padding(
                                                         padding:
                                                             const EdgeInsetsDirectional
@@ -777,9 +866,9 @@ class _StaffCheckPageWidgetState extends State<StaffCheckPageWidget>
                                                             padding:
                                                                 const EdgeInsetsDirectional
                                                                     .fromSTEB(
-                                                                        24.0,
+                                                                        16.0,
                                                                         0.0,
-                                                                        24.0,
+                                                                        30.0,
                                                                         0.0),
                                                             iconPadding:
                                                                 const EdgeInsetsDirectional
@@ -821,7 +910,7 @@ class _StaffCheckPageWidgetState extends State<StaffCheckPageWidget>
                                                   );
                                                 },
                                               ),
-                                            ),
+                                            ],
                                           ),
                                         ),
                                       ],
