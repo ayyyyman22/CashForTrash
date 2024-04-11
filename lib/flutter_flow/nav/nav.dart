@@ -220,6 +220,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'ContactPage',
           path: '/ContactPage',
           builder: (context, params) => const ContactPageWidget(),
+        ),
+        FFRoute(
+          name: 'example',
+          path: '/example',
+          builder: (context, params) => const ExampleWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

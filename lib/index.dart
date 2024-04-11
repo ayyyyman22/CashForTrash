@@ -39,3 +39,4 @@ export '/pages/user_account_pages/f_a_q_page/f_a_q_page_widget.dart'
     show FAQPageWidget;
 export '/pages/user_account_pages/contact_page/contact_page_widget.dart'
     show ContactPageWidget;
+export '/example/example_widget.dart' show ExampleWidget;

@@ -496,7 +496,7 @@ class _AccountCreationWidgetState extends State<AccountCreationWidget> {
                                 textCapitalization: TextCapitalization.words,
                                 obscureText: false,
                                 decoration: InputDecoration(
-                                  labelText: 'Adress(optional)',
+                                  labelText: 'Address(optional)',
                                   labelStyle: FlutterFlowTheme.of(context)
                                       .labelLarge
                                       .override(

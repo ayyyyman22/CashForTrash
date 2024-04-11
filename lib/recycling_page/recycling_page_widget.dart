@@ -133,7 +133,7 @@ class _RecyclingPageWidgetState extends State<RecyclingPageWidget> {
                 ),
                 FFButtonWidget(
                   onPressed: () async {
-                    context.pushNamed('RecycleStationPage');
+                    context.pushNamed('RecycleAndPointUsageHistorypage');
                   },
                   text: 'Button',
                   options: FFButtonOptions(
